@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brahma Teja — Data Scientist & AI Founder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080C18;--bg2:#0E1528;--bg3:#131D35;--bg4:#1A2540;
+  --v:#7C6FE0;--vl:#A99EF0;--vd:rgba(124,111,224,.15);
+  --t:#2DD4BF;--td:rgba(45,212,191,.12);
+  --pk:#E879A0;
+  --w:#EEF0F8;--m:#7A84A0;
+  --br:rgba(124,111,224,.18);--br2:rgba(124,111,224,.08);
+  --r:12px;--rs:8px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--w);font-family:'Space Grotesk',sans-serif;overflow-x:hidden;line-height:1.5}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:56px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(8,12,24,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--br2)}
+.nb{display:flex;align-items:center;gap:9px;text-decoration:none}
+.nd{width:8px;height:8px;border-radius:50%;background:var(--v);box-shadow:0 0 8px var(--v);animation:blink 2.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.nn{font-family:'Sora',sans-serif;font-size:14px;font-weight:600;color:var(--w)}
+.nl{display:flex;gap:24px;list-style:none}
+.nl a{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--m);text-decoration:none;transition:color .2s}
+.nl a:hover{color:var(--vl)}
+.ncta{padding:6px 16px;background:var(--vd);border:1px solid var(--br);border-radius:999px;font-size:11px;font-weight:700;color:var(--vl);text-decoration:none;letter-spacing:.06em;transition:all .2s}
+.ncta:hover{background:rgba(124,111,224,.28);border-color:var(--v)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:90px 48px 72px;position:relative;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+.o1{width:480px;height:480px;background:rgba(124,111,224,.1);top:-80px;right:-80px}
+.o2{width:280px;height:280px;background:rgba(45,212,191,.07);bottom:80px;left:-40px}
+
+.hero-top{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:start;margin-bottom:48px}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--t);margin-bottom:20px}
+.hero-badge::before{content:'';display:block;width:20px;height:1px;background:var(--t)}
+h1{font-family:'Sora',sans-serif;font-size:clamp(38px,6vw,68px);font-weight:700;line-height:1.05;color:var(--w);margin-bottom:10px}
+h1 span{background:linear-gradient(135deg,var(--vl),var(--t));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-role{font-size:16px;font-weight:400;color:var(--m);margin-bottom:24px}
+
+/* identity chips */
+.id-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:0}
+.idc{padding:6px 14px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid;display:inline-flex;align-items:center;gap:6px}
+.idc-v{background:var(--vd);border-color:var(--br);color:var(--vl)}
+.idc-t{background:var(--td);border-color:rgba(45,212,191,.25);color:var(--t)}
+.idc-m{background:rgba(122,132,160,.1);border-color:rgba(122,132,160,.2);color:var(--m)}
+
+/* stat block */
+.stat-block{display:flex;flex-direction:column;gap:10px;min-width:200px}
+.stat-row{padding:16px 20px;background:var(--bg2);border:1px solid var(--br2);border-radius:var(--r);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.sv{font-family:'Sora',sans-serif;font-size:22px;font-weight:700;color:var(--vl)}
+.sl{font-size:11px;font-weight:500;color:var(--m);text-align:right;max-width:110px;line-height:1.3}
+
+.hero-cta{display:flex;gap:12px;margin-top:32px}
+.btn{padding:11px 22px;border-radius:var(--rs);font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;letter-spacing:.05em;text-decoration:none;cursor:pointer;border:none;transition:all .2s;display:inline-flex;align-items:center;gap:7px}
+.bv{background:var(--v);color:#fff}
+.bv:hover{background:var(--vl);transform:translateY(-2px)}
+.bo{background:transparent;border:1px solid var(--br);color:var(--m)}
+.bo:hover{border-color:var(--v);color:var(--vl);transform:translateY(-2px)}
+
+/* SECTIONS */
+section{padding:88px 48px;position:relative}
+.sh{display:flex;align-items:center;gap:14px;margin-bottom:52px}
+.stag{font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--t);padding:3px 10px;background:var(--td);border-radius:999px;border:1px solid rgba(45,212,191,.2)}
+.st{font-family:'Sora',sans-serif;font-size:clamp(22px,3vw,32px);font-weight:700;color:var(--w)}
+.sl2{flex:1;height:1px;background:linear-gradient(90deg,var(--br),transparent)}
+
+/* ── ABOUT ── */
+#about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+
+.info-card{background:var(--bg3);border:1px solid var(--br2);border-radius:var(--r);padding:24px;transition:border-color .25s,transform .25s}
+.info-card:hover{border-color:var(--br);transform:translateY(-3px)}
+.ic-head{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--br2)}
+.ic-icon{width:32px;height:32px;border-radius:var(--rs);background:var(--vd);display:flex;align-items:center;justify-content:center;font-size:15px}
+.ic-title{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--vl)}
+
+.blist{list-style:none;display:flex;flex-direction:column;gap:7px}
+.blist li{font-size:13px;color:rgba(238,240,248,.7);padding-left:16px;position:relative;line-height:1.55}
+.blist li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:1px;background:var(--t)}
+.blist li strong{color:var(--vl);font-weight:600}
+
+.tag-grid{display:flex;flex-wrap:wrap;gap:6px}
+.tg{font-size:11px;padding:4px 11px;border-radius:999px;background:rgba(124,111,224,.07);border:1px solid rgba(124,111,224,.18);color:rgba(238,240,248,.75);transition:all .2s;cursor:default}
+.tg:hover{background:var(--vd);border-color:var(--v);color:var(--vl)}
+
+/* cert row */
+.cert-row{display:flex;gap:10px;flex-direction:column}
+.cert{padding:10px 14px;background:var(--bg4);border:1px solid var(--br2);border-radius:var(--rs);font-size:12px;color:var(--m);display:flex;align-items:center;gap:8px}
+.cert-dot{width:6px;height:6px;border-radius:50%;background:var(--v);flex-shrink:0}
+
+/* ── SARTHAI ── */
+#founder{background:var(--bg)}
+.founder-shell{background:var(--bg2);border:1px solid var(--br);border-radius:18px;overflow:hidden}
+.founder-top{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.founder-left{padding:40px;border-right:1px solid var(--br2)}
+.founder-right{padding:40px}
+.ft-bar{height:3px;background:linear-gradient(90deg,var(--v),var(--t),var(--v))}
+
+.f-badge{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--vl);border:1px solid var(--br);padding:4px 12px;border-radius:999px;background:var(--vd);margin-bottom:20px}
+.f-h2{font-family:'Sora',sans-serif;font-size:28px;font-weight:700;color:var(--w);margin-bottom:6px;line-height:1.15}
+.f-h2 span{background:linear-gradient(135deg,var(--vl),var(--t));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.f-sub{font-size:13px;color:var(--m);margin-bottom:24px}
+
+.prob-block{margin-bottom:24px}
+.pb-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--t);margin-bottom:10px}
+
+.kv-list{display:flex;flex-direction:column;gap:8px}
+.kv{display:flex;align-items:start;gap:12px;padding:10px 14px;background:var(--bg3);border:1px solid var(--br2);border-radius:var(--rs)}
+.kv-k{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--v);min-width:80px;padding-top:1px}
+.kv-v{font-size:12.5px;color:rgba(238,240,248,.7);line-height:1.5}
+
+/* metrics strip */
+.metrics-strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--br2)}
+.ms-item{padding:20px 22px;border-right:1px solid var(--br2);background:var(--bg3)}
+.ms-item:last-child{border-right:none}
+.ms-val{font-family:'Sora',sans-serif;font-size:24px;font-weight:700;color:var(--t);margin-bottom:3px}
+.ms-lbl{font-size:10px;font-weight:500;color:var(--m);letter-spacing:.04em}
+
+/* MINDMAP SVG */
+.mindmap-wrap{padding:20px 40px 36px;border-top:1px solid var(--br2)}
+.mindmap-title{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--m);margin-bottom:16px}
+
+/* ── EXPERIENCE ── */
+#experience{background:var(--bg2)}
+.exp-list{display:flex;flex-direction:column;gap:10px}
+.exp-card{background:var(--bg3);border:1px solid var(--br2);border-radius:var(--r);overflow:hidden;transition:border-color .25s}
+.exp-card:hover{border-color:var(--br)}
+.exp-h{padding:18px 24px;display:flex;align-items:center;gap:14px;cursor:pointer;user-select:none}
+.exp-dot{width:10px;height:10px;border-radius:50%;background:var(--v);flex-shrink:0;box-shadow:0 0 5px var(--v)}
+.exp-dot.cur{background:var(--t);box-shadow:0 0 5px var(--t)}
+.exp-info{flex:1}
+.exp-role{font-size:14px;font-weight:600;color:var(--w)}
+.exp-co{font-size:12px;color:var(--vl);font-weight:500}
+.exp-date{font-size:11px;font-weight:600;color:var(--m);padding:3px 10px;background:var(--bg4);border-radius:999px;white-space:nowrap;flex-shrink:0}
+.exp-chev{font-size:12px;color:var(--m);transition:transform .3s}
+.exp-card.open .exp-chev{transform:rotate(180deg)}
+.exp-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.exp-card.open .exp-body{max-height:500px}
+.exp-inner{padding:0 24px 20px 48px;border-top:1px solid var(--br2)}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.exp-col-title{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{font-size:11px;font-weight:600;padding:3px 11px;border-radius:999px;background:rgba(45,212,191,.08);border:1px solid rgba(45,212,191,.2);color:var(--t)}
+.chip-v{background:var(--vd);border-color:rgba(124,111,224,.25);color:var(--vl)}
+
+/* ── SKILLS ── */
+#skills{background:var(--bg)}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.sk-card{padding:24px;background:var(--bg2);border:1px solid var(--br2);border-radius:var(--r);transition:border-color .25s,transform .25s}
+.sk-card:hover{border-color:var(--br);transform:translateY(-3px)}
+.sk-head{display:flex;align-items:center;gap:9px;margin-bottom:16px}
+.sk-icon{width:30px;height:30px;border-radius:var(--rs);background:var(--vd);display:flex;align-items:center;justify-content:center;font-size:14px}
+.sk-title{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--vl)}
+
+/* ── FLOWCHART / VISION ── */
+#vision{background:var(--bg2)}
+.vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.vision-list{display:flex;flex-direction:column;gap:10px}
+.vision-item{display:flex;gap:14px;padding:16px 18px;background:var(--bg3);border:1px solid var(--br2);border-radius:var(--r);align-items:start;transition:border-color .2s,transform .2s}
+.vision-item:hover{border-color:var(--br);transform:translateX(4px)}
+.vi-num{font-family:'Sora',sans-serif;font-size:22px;font-weight:700;color:rgba(124,111,224,.2);line-height:1;flex-shrink:0;min-width:28px}
+.vi-title{font-size:13px;font-weight:600;color:var(--vl);margin-bottom:4px}
+.vi-pts{list-style:none;display:flex;flex-direction:column;gap:3px}
+.vi-pts li{font-size:12px;color:var(--m);padding-left:12px;position:relative}
+.vi-pts li::before{content:'·';position:absolute;left:3px;color:var(--t)}
+
+/* ── EDUCATION ── */
+#education{background:var(--bg)}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.edu-card{padding:28px;background:var(--bg2);border:1px solid var(--br2);border-radius:var(--r);transition:border-color .25s,transform .25s;position:relative;overflow:hidden}
+.edu-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--v),var(--t));opacity:.5}
+.edu-card:hover{border-color:var(--br);transform:translateY(-3px)}
+.edu-badge{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--vl);padding:3px 10px;background:var(--vd);border-radius:999px;display:inline-block;margin-bottom:14px}
+.edu-deg{font-family:'Sora',sans-serif;font-size:17px;font-weight:700;color:var(--w);margin-bottom:4px;line-height:1.25}
+.edu-sch{font-size:12px;font-weight:500;color:var(--vl);margin-bottom:3px}
+.edu-yr{font-size:11px;color:var(--m);margin-bottom:14px}
+
+/* ── CONTACT ── */
+#contact{background:var(--bg2);text-align:center}
+.contact-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(124,111,224,.1) 0%,transparent 70%);pointer-events:none}
+.c-h2{font-family:'Sora',sans-serif;font-size:clamp(24px,3.5vw,42px);font-weight:700;color:var(--w);margin-bottom:28px;position:relative}
+.c-h2 span{background:linear-gradient(135deg,var(--vl),var(--t));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.contact-cards{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;position:relative}
+.cc{padding:14px 24px;border-radius:var(--r);font-size:13px;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:8px;transition:all .2s}
+.cc-v{background:var(--v);color:#fff}
+.cc-v:hover{background:var(--vl);transform:translateY(-2px)}
+.cc-o{background:var(--bg3);border:1px solid var(--br);color:var(--m)}
+.cc-o:hover{border-color:var(--v);color:var(--vl);transform:translateY(-2px)}
+.open-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;color:var(--t);padding:6px 16px;background:var(--td);border:1px solid rgba(45,212,191,.2);border-radius:999px;margin-bottom:24px}
+.ob-dot{width:6px;height:6px;border-radius:50%;background:var(--t);animation:blink 2s infinite}
+
+/* footer */
+footer{padding:24px 48px;border-top:1px solid var(--br2);display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--m)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.vis{opacity:1;transform:none}
+
+@media(max-width:768px){
+  nav{padding:0 16px}.nl{display:none}
+  section{padding:64px 16px}
+  .hero{padding:80px 16px 60px}
+  .hero-top,.about-grid,.founder-top,.two-col,.skills-grid,.vision-grid,.edu-grid{grid-template-columns:1fr}
+  .metrics-strip{grid-template-columns:1fr 1fr}
+  footer{flex-direction:column;gap:6px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nb" href="#"><div class="nd"></div><span class="nn">Brahma Teja</span></a>
+  <ul class="nl">
+    <li><a href="#about">About</a></li>
+    <li><a href="#founder">SarthAI</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:bpunnamaraju@gmail.com" class="ncta">Reach Out</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="hero-top">
+    <div>
+      <div class="hero-badge">Chicago, IL · Open to Opportunities</div>
+      <h1>Brahma Teja<br><span>Punnamaraju</span></h1>
+      <p class="hero-role">Senior Data Scientist &amp; AI Founder</p>
+      <div class="id-chips">
+        <span class="idc idc-v">🧠 NLP &amp; LLMs</span>
+        <span class="idc idc-v">⚙️ Data Engineering</span>
+        <span class="idc idc-t">🚀 AI Founder · SarthAI</span>
+        <span class="idc idc-t">📊 Predictive Modeling</span>
+        <span class="idc idc-m">Penn State MBA · 2023</span>
+        <span class="idc idc-m">5+ yrs Enterprise AI</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="btn bv">Let's Talk →</a>
+        <a href="#experience" class="btn bo">View Work</a>
+      </div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-row"><span class="sv">$10M+</span><span class="sl">Annual savings driven</span></div>
+      <div class="stat-row"><span class="sv">$120M</span><span class="sl">Revenue influenced</span></div>
+      <div class="stat-row"><span class="sv">5+ yrs</span><span class="sl">Enterprise AI/data</span></div>
+      <div class="stat-row"><span class="sv">3</span><span class="sl">Industries: auto · health · tech</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sh reveal"><span class="stag">01 · About</span><h2 class="st">At a Glance</h2><div class="sl2"></div></div>
+  <div class="about-grid">
+
+    <div class="info-card reveal">
+      <div class="ic-head"><div class="ic-icon">👤</div><span class="ic-title">Who I am</span></div>
+      <ul class="blist">
+        <li><strong>Data Scientist &amp; AI Founder</strong> — Chicago area</li>
+        <li>Grad: <strong>MS Business Analytics (STEM)</strong>, Penn State 2023</li>
+        <li>Currently: <strong>Kavi Global</strong> — enterprise AI &amp; ETL</li>
+        <li>Building: <strong>SarthAI</strong> — relational intelligence platform</li>
+        <li>Focus: NLP, LLMs, optimization, Gen AI deployment</li>
+        <li>Industries: <strong>Healthcare · Automotive · Tech · Policy</strong></li>
+      </ul>
+    </div>
+
+    <div class="info-card reveal">
+      <div class="ic-head"><div class="ic-icon">💡</div><span class="ic-title">What drives me</span></div>
+      <ul class="blist">
+        <li>Obsessed with the <strong>gap between data and meaning</strong></li>
+        <li>Why do smart systems miss what <em>actually</em> matters?</li>
+        <li>Building AI that interprets, not just processes</li>
+        <li>Fascinated by <strong>context</strong> — in decisions, in language, between people</li>
+        <li>Every pipeline is an experiment in that direction</li>
+      </ul>
+    </div>
+
+    <div class="info-card reveal">
+      <div class="ic-head"><div class="ic-icon">🛠️</div><span class="ic-title">Core Stack</span></div>
+      <div class="tag-grid">
+        <span class="tg">Python</span><span class="tg">SQL</span><span class="tg">PySpark</span><span class="tg">R</span>
+        <span class="tg">LangChain</span><span class="tg">Pinecone</span><span class="tg">Snowflake</span>
+        <span class="tg">Dagster</span><span class="tg">DBT</span><span class="tg">Streamlit</span>
+        <span class="tg">AWS</span><span class="tg">Azure</span><span class="tg">GCP</span><span class="tg">Databricks</span>
+        <span class="tg">Power BI</span><span class="tg">Tableau</span>
+      </div>
+    </div>
+
+    <div class="info-card reveal">
+      <div class="ic-head"><div class="ic-icon">🎓</div><span class="ic-title">Certifications</span></div>
+      <div class="cert-row">
+        <div class="cert"><div class="cert-dot"></div>PCEP Certified Python Programmer</div>
+        <div class="cert"><div class="cert-dot"></div>PCAP Certified Associate Python Programmer</div>
+        <div class="cert"><div class="cert-dot"></div>MS Business Analytics (STEM) — Penn State 2023</div>
+        <div class="cert"><div class="cert-dot"></div>B.Tech Mechanical Engineering — KL University 2018</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SARTHAI -->
+<section id="founder">
+  <div class="sh reveal"><span class="stag">02 · Founder</span><h2 class="st">SarthAI</h2><div class="sl2"></div></div>
+  <div class="founder-shell reveal">
+    <div class="ft-bar"></div>
+    <div class="founder-top">
+
+      <div class="founder-left">
+        <div class="f-badge">🚀 Founder · Lead Developer · Live Product</div>
+        <div class="f-h2">Relational<br><span>Intelligence.</span></div>
+        <div class="f-sub">Decoding the Context Gap in digital communication</div>
+
+        <div class="prob-block">
+          <div class="pb-label">The Problem</div>
+          <div class="kv-list">
+            <div class="kv"><span class="kv-k">Problem</span><span class="kv-v">Messages are fast — but meaning gets stripped out</span></div>
+            <div class="kv"><span class="kv-k">Root cause</span><span class="kv-v">"Communication Latency" — emotional metadata lost in text</span></div>
+            <div class="kv"><span class="kv-k">Cost</span><span class="kv-v">Misunderstandings, isolation, relational friction at work</span></div>
+            <div class="kv"><span class="kv-k">Gap</span><span class="kv-v">Efficiency-first messaging vs. accuracy-first understanding</span></div>
+          </div>
+        </div>
+
+        <div class="prob-block">
+          <div class="pb-label">The Solution</div>
+          <div class="kv-list">
+            <div class="kv"><span class="kv-k">Engine</span><span class="kv-v">LangChain + Pinecone — semantic memory &amp; intent analysis</span></div>
+            <div class="kv"><span class="kv-k">Method</span><span class="kv-v">Sentiment variance analysis + emotional metadata reconstruction</span></div>
+            <div class="kv"><span class="kv-k">Output</span><span class="kv-v">Real-time intent translation &amp; communication coaching</span></div>
+            <div class="kv"><span class="kv-k">Model</span><span class="kv-v">Llama / Cortex — 94% response accuracy in testing</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="founder-right">
+        <div class="pb-label" style="margin-bottom:16px">Architecture Mindmap</div>
+        <!-- SARTHAI MINDMAP SVG -->
+        <svg viewBox="0 0 440 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:440px">
+          <defs>
+            <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L6,3 z" fill="rgba(124,111,224,.5)"/>
+            </marker>
+            <marker id="arr-t" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L6,3 z" fill="rgba(45,212,191,.5)"/>
+            </marker>
+          </defs>
+
+          <!-- CENTER -->
+          <ellipse cx="220" cy="210" rx="68" ry="34" fill="rgba(124,111,224,.2)" stroke="#7C6FE0" stroke-width="1.5"/>
+          <text x="220" y="205" font-family="Sora,sans-serif" font-size="13" font-weight="700" fill="#A99EF0" text-anchor="middle">SarthAI</text>
+          <text x="220" y="221" font-family="Space Grotesk,sans-serif" font-size="9" fill="#7A84A0" text-anchor="middle">Relational Intelligence</text>
+
+          <!-- INPUT -->
+          <line x1="162" y1="198" x2="112" y2="148" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
+          <rect x="24" y="118" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
+          <text x="65" y="137" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">INPUT</text>
+          <text x="65" y="150" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Digital Messages</text>
+          <text x="65" y="161" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Chat / Email / Slack</text>
+
+          <!-- NLP ENGINE -->
+          <line x1="162" y1="210" x2="108" y2="210" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
+          <rect x="24" y="187" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
+          <text x="65" y="206" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">NLP ENGINE</text>
+          <text x="65" y="219" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Sentiment Analysis</text>
+          <text x="65" y="230" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Intent Recognition</text>
+
+          <!-- VECTOR DB -->
+          <line x1="162" y1="222" x2="112" y2="272" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
+          <rect x="24" y="256" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
+          <text x="65" y="275" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">VECTOR DB</text>
+          <text x="65" y="288" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Pinecone Memory</text>
+          <text x="65" y="299" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Context History</text>
+
+          <!-- LLM -->
+          <line x1="278" y1="198" x2="326" y2="148" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
+          <rect x="334" y="118" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
+          <text x="375" y="137" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">LLM</text>
+          <text x="375" y="150" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">LangChain / Llama</text>
+          <text x="375" y="161" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Orchestration Layer</text>
+
+          <!-- COACHING -->
+          <line x1="278" y1="210" x2="332" y2="210" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
+          <rect x="334" y="187" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
+          <text x="375" y="206" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">COACHING</text>
+          <text x="375" y="219" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Real-time Guidance</text>
+          <text x="375" y="230" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Intent Translation</text>
+
+          <!-- OUTPUT -->
+          <line x1="278" y1="222" x2="326" y2="272" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
+          <rect x="334" y="256" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
+          <text x="375" y="275" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">OUTPUT</text>
+          <text x="375" y="288" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Decoded Meaning</text>
+          <text x="375" y="299" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Reduced Friction</text>
+
+          <!-- TOP: PROBLEM -->
+          <line x1="220" y1="176" x2="220" y2="96" stroke="rgba(232,121,160,.4)" stroke-width="1" marker-end="url(#arr)"/>
+          <rect x="152" y="52" width="136" height="40" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(232,121,160,.3)" stroke-width="1"/>
+          <text x="220" y="70" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#E879A0" text-anchor="middle">PROBLEM SPACE</text>
+          <text x="220" y="83" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Communication Latency · Context Gap</text>
+
+          <!-- BOTTOM: IMPACT -->
+          <line x1="220" y1="244" x2="220" y2="330" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
+          <rect x="148" y="332" width="144" height="40" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
+          <text x="220" y="350" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">IMPACT</text>
+          <text x="220" y="363" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Efficiency-first → Accuracy-first</text>
+
+          <!-- key stats at bottom -->
+          <text x="220" y="400" font-family="Space Grotesk,sans-serif" font-size="9" fill="rgba(124,111,224,.5)" text-anchor="middle">8,323 msgs analyzed · 85% retrieval · 94% accuracy</text>
+        </svg>
+      </div>
+
+    </div>
+    <div class="metrics-strip">
+      <div class="ms-item"><div class="ms-val">8,323</div><div class="ms-lbl">Messages analyzed</div></div>
+      <div class="ms-item"><div class="ms-val">85%+</div><div class="ms-lbl">Retrieval accuracy</div></div>
+      <div class="ms-item"><div class="ms-val">94%</div><div class="ms-lbl">Cortex search accuracy</div></div>
+      <div class="ms-item"><div class="ms-val">Live</div><div class="ms-lbl">Product in testing</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sh reveal"><span class="stag">03 · Experience</span><h2 class="st">Work History</h2><div class="sl2"></div></div>
+  <div class="exp-list">
+
+    <div class="exp-card reveal">
+      <div class="exp-h" onclick="toggleE(this)">
+        <div class="exp-dot cur"></div>
+        <div class="exp-info"><div class="exp-role">Consultant — Data Science</div><div class="exp-co">Kavi Global · Illinois, USA</div></div>
+        <span class="exp-date">Sept 2024 – Present</span><span class="exp-chev">▾</span>
+      </div>
+      <div class="exp-body"><div class="exp-inner">
+        <div class="two-col">
+          <div>
+            <div class="exp-col-title">What I built</div>
+            <ul class="blist">
+              <li>Scalable <strong>ETL pipelines</strong> — Dagster + PostgreSQL</li>
+              <li><strong>Resource allocation model</strong> for phlebotomist staffing</li>
+              <li><strong>LLM chatbot</strong> — 1,200+ PDFs + 1,500+ Snowflake tables</li>
+              <li><strong>Cortex Analyst/Search</strong> — YAML config refinement</li>
+              <li><strong>OCR compliance tool</strong> — pdf2image, OpenCV, Tesseract + RAG</li>
+              <li>SLMs used: <strong>Phi-4, Gemma, Mistral</strong></li>
+            </ul>
+          </div>
+          <div>
+            <div class="exp-col-title">Results</div>
+            <ul class="blist">
+              <li><strong>~$10M</strong> projected annual savings</li>
+              <li><strong>~30%</strong> better coverage consistency</li>
+              <li><strong>85%+</strong> chatbot retrieval accuracy</li>
+              <li>Cortex accuracy: <strong>60% → 94%</strong></li>
+              <li>Validation accuracy: <strong>70% → 95%+</strong></li>
+              <li>Review time cut by <strong>80%</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="chips">
+          <span class="chip">NeuralProphet</span><span class="chip">Gurobi</span><span class="chip">OR-Tools</span>
+          <span class="chip">Llama</span><span class="chip">RAG</span><span class="chip">Snowflake</span>
+          <span class="chip-v">$10M savings</span><span class="chip-v">94% accuracy</span>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-h" onclick="toggleE(this)">
+        <div class="exp-dot"></div>
+        <div class="exp-info"><div class="exp-role">Data Analyst (Contract)</div><div class="exp-co">Community Dreams Foundation · Illinois</div></div>
+        <span class="exp-date">Apr – Sept 2024</span><span class="exp-chev">▾</span>
+      </div>
+      <div class="exp-body"><div class="exp-inner">
+        <div class="two-col">
+          <div>
+            <div class="exp-col-title">What I built</div>
+            <ul class="blist">
+              <li><strong>Azure Data Factory</strong> ETL — survey + social media data</li>
+              <li>Real-time <strong>Power BI dashboard</strong> — KPI monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <div class="exp-col-title">Results</div>
+            <ul class="blist">
+              <li><strong>30%</strong> improvement in learning outcomes</li>
+              <li>Improved stakeholder KPI visibility</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chips"><span class="chip">Azure Data Factory</span><span class="chip">Power BI</span><span class="chip-v">30% outcome lift</span></div>
+      </div></div>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-h" onclick="toggleE(this)">
+        <div class="exp-dot"></div>
+        <div class="exp-info"><div class="exp-role">Data Science Intern</div><div class="exp-co">Evidence-to-Impact Collaborative · Penn State</div></div>
+        <span class="exp-date">Sept 2023 – Mar 2024</span><span class="exp-chev">▾</span>
+      </div>
+      <div class="exp-body"><div class="exp-inner">
+        <div class="two-col">
+          <div>
+            <div class="exp-col-title">What I built</div>
+            <ul class="blist">
+              <li>Data standardization + profiling — <strong>Azure SQL</strong></li>
+              <li><strong>GPT-3.5 turbo chatbot</strong> on Azure OpenAI Service</li>
+              <li>Policy cost-benefit data models</li>
+            </ul>
+          </div>
+          <div>
+            <div class="exp-col-title">Results</div>
+            <ul class="blist">
+              <li>Data accuracy <strong>+27%</strong></li>
+              <li><strong>~100 hrs</strong> saved in data cleaning</li>
+              <li>Policy search time cut by <strong>60%</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="chips"><span class="chip">GPT-3.5</span><span class="chip">Azure SQL</span><span class="chip-v">60% faster search</span></div>
+      </div></div>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-h" onclick="toggleE(this)">
+        <div class="exp-dot"></div>
+        <div class="exp-info"><div class="exp-role">Business Analyst</div><div class="exp-co">Hyundai Motors · Telangana, India</div></div>
+        <span class="exp-date">Aug 2018 – Jul 2022</span><span class="exp-chev">▾</span>
+      </div>
+      <div class="exp-body"><div class="exp-inner">
+        <div class="two-col">
+          <div>
+            <div class="exp-col-title">What I built</div>
+            <ul class="blist">
+              <li><strong>Customer segmentation</strong> — latent class analysis</li>
+              <li><strong>Micro-SUV demand analysis</strong> — SQL + Power BI</li>
+              <li>Road accident data analysis — 20 years of data</li>
+              <li>Monthly sales reporting — 600K+ records</li>
+              <li>Market trend predictive models</li>
+            </ul>
+          </div>
+          <div>
+            <div class="exp-col-title">Results</div>
+            <ul class="blist">
+              <li>Product launch: <strong>100K bookings</strong>, <strong>$120M revenue</strong> in 5 months</li>
+              <li>CSAT: <strong>3.5 → 4.2</strong></li>
+              <li>Repeat customers: <strong>+25%</strong></li>
+              <li>Conversion rate: <strong>15% → 18%</strong></li>
+              <li><strong>~300 hrs/yr</strong> saved in reporting</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chips">
+          <span class="chip">SQL</span><span class="chip">Power BI</span><span class="chip">Advanced Excel</span>
+          <span class="chip-v">$120M revenue</span><span class="chip-v">100K bookings</span>
+        </div>
+      </div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sh reveal"><span class="stag">04 · Skills</span><h2 class="st">Technical Stack</h2><div class="sl2"></div></div>
+  <div class="skills-grid">
+    <div class="sk-card reveal">
+      <div class="sk-head"><div class="sk-icon">🧠</div><span class="sk-title">AI & Machine Learning</span></div>
+      <div class="tag-grid">
+        <span class="tg">Applied NLP</span><span class="tg">LLM Orchestration</span><span class="tg">RAG</span>
+        <span class="tg">Sentiment Analysis</span><span class="tg">Intent Recognition</span><span class="tg">XGBoost</span>
+        <span class="tg">Random Forest</span><span class="tg">Forecasting</span><span class="tg">A/B Testing</span>
+        <span class="tg">TensorFlow</span><span class="tg">NeuralProphet</span><span class="tg">Scikit-learn</span>
+      </div>
+    </div>
+    <div class="sk-card reveal">
+      <div class="sk-head"><div class="sk-icon">🔗</div><span class="sk-title">Frameworks & Tools</span></div>
+      <div class="tag-grid">
+        <span class="tg">LangChain</span><span class="tg">Pinecone</span><span class="tg">Snowflake</span>
+        <span class="tg">Dagster</span><span class="tg">DBT</span><span class="tg">Docker</span>
+        <span class="tg">Streamlit</span><span class="tg">Gurobi</span><span class="tg">OR-Tools</span>
+        <span class="tg">Git</span><span class="tg">Jira</span><span class="tg">Confluence</span>
+      </div>
+    </div>
+    <div class="sk-card reveal">
+      <div class="sk-head"><div class="sk-icon">☁️</div><span class="sk-title">Cloud & Data Engineering</span></div>
+      <div class="tag-grid">
+        <span class="tg">AWS</span><span class="tg">Azure</span><span class="tg">GCP / BigQuery</span>
+        <span class="tg">Databricks</span><span class="tg">PySpark</span><span class="tg">ETL Pipelines</span>
+        <span class="tg">Data Warehousing</span><span class="tg">Data Modeling</span><span class="tg">PostgreSQL</span>
+        <span class="tg">Data Governance</span>
+      </div>
+    </div>
+    <div class="sk-card reveal">
+      <div class="sk-head"><div class="sk-icon">📊</div><span class="sk-title">Languages & Visualization</span></div>
+      <div class="tag-grid">
+        <span class="tg">Python</span><span class="tg">SQL</span><span class="tg">R</span><span class="tg">DAX</span>
+        <span class="tg">PySpark</span><span class="tg">Power BI</span><span class="tg">Tableau</span>
+        <span class="tg">Looker</span><span class="tg">Pandas</span><span class="tg">NumPy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION / CURIOSITY -->
+<section id="vision">
+  <div class="sh reveal"><span class="stag">05 · Curiosity</span><h2 class="st">What I'm Exploring</h2><div class="sl2"></div></div>
+  <div class="vision-grid">
+    <div class="vision-list">
+      <div class="vision-item reveal">
+        <div class="vi-num">01</div>
+        <div>
+          <div class="vi-title">Relational AI</div>
+          <ul class="vi-pts">
+            <li>Can LLMs understand <em>intent</em>, not just words?</li>
+            <li>Emotional metadata in text — building for this</li>
+            <li>Context gap between sender and receiver</li>
+          </ul>
+        </div>
+      </div>
+      <div class="vision-item reveal">
+        <div class="vi-num">02</div>
+        <div>
+          <div class="vi-title">Optimization Under Constraint</div>
+          <ul class="vi-pts">
+            <li>Resource allocation at scale (OR-Tools, Gurobi)</li>
+            <li>Healthcare workforce scheduling</li>
+            <li>NLP + operations research convergence</li>
+          </ul>
+        </div>
+      </div>
+      <div class="vision-item reveal">
+        <div class="vi-num">03</div>
+        <div>
+          <div class="vi-title">Small Language Models</div>
+          <ul class="vi-pts">
+            <li>SLMs (Phi-4, Gemma, Mistral) for edge deployment</li>
+            <li>Accuracy vs. compute tradeoff in enterprise AI</li>
+            <li>RAG + SLMs for specialized domain tasks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIPELINE FLOWCHART -->
+    <div class="reveal">
+      <div style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--m);margin-bottom:16px">Typical AI Pipeline I Build</div>
+      <svg viewBox="0 0 320 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:320px">
+        <!-- boxes -->
+        <rect x="80" y="10" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.4)" stroke-width="1.5"/>
+        <text x="160" y="28" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">RAW DATA</text>
+        <text x="160" y="41" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">CSV · API · PDF · DB</text>
+
+        <line x1="160" y1="54" x2="160" y2="80" stroke="rgba(124,111,224,.4)" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <rect x="80" y="80" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
+        <text x="160" y="98" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">ETL / PIPELINE</text>
+        <text x="160" y="111" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Dagster · DBT · Snowflake</text>
+
+        <line x1="160" y1="124" x2="160" y2="150" stroke="rgba(124,111,224,.4)" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <rect x="80" y="150" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.3)" stroke-width="1"/>
+        <text x="160" y="168" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">FEATURE ENG.</text>
+        <text x="160" y="181" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Pandas · PySpark · SQL</text>
+
+        <line x1="160" y1="194" x2="160" y2="220" stroke="rgba(45,212,191,.4)" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <rect x="80" y="220" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.3)" stroke-width="1"/>
+        <text x="160" y="238" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">MODEL / LLM</text>
+        <text x="160" y="251" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">XGBoost · LangChain · RAG</text>
+
+        <line x1="160" y1="264" x2="160" y2="290" stroke="rgba(45,212,191,.4)" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <rect x="80" y="290" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(232,121,160,.3)" stroke-width="1"/>
+        <text x="160" y="308" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#E879A0" text-anchor="middle">EVALUATION</text>
+        <text x="160" y="321" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">A/B Test · Accuracy · KPIs</text>
+
+        <line x1="160" y1="334" x2="160" y2="360" stroke="rgba(232,121,160,.4)" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <rect x="80" y="360" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(232,121,160,.3)" stroke-width="1"/>
+        <text x="160" y="378" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#E879A0" text-anchor="middle">DEPLOYMENT</text>
+        <text x="160" y="391" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Streamlit · API · Dashboard</text>
+
+        <line x1="160" y1="404" x2="160" y2="430" stroke="rgba(45,212,191,.4)" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <rect x="80" y="430" width="160" height="44" rx="8" fill="rgba(45,212,191,.08)" stroke="rgba(45,212,191,.4)" stroke-width="1.5"/>
+        <text x="160" y="448" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">BUSINESS IMPACT</text>
+        <text x="160" y="461" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Cost savings · Revenue · Efficiency</text>
+
+        <!-- arrows -->
+        <polygon points="155,78 160,88 165,78" fill="rgba(124,111,224,.5)"/>
+        <polygon points="155,148 160,158 165,148" fill="rgba(124,111,224,.5)"/>
+        <polygon points="155,218 160,228 165,218" fill="rgba(45,212,191,.5)"/>
+        <polygon points="155,288 160,298 165,288" fill="rgba(45,212,191,.5)"/>
+        <polygon points="155,358 160,368 165,358" fill="rgba(232,121,160,.5)"/>
+        <polygon points="155,428 160,438 165,428" fill="rgba(45,212,191,.5)"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="sh reveal"><span class="stag">06 · Education</span><h2 class="st">Academic Background</h2><div class="sl2"></div></div>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div class="edu-badge">Graduate · STEM</div>
+      <div class="edu-deg">Master of Business Analytics</div>
+      <div class="edu-sch">Pennsylvania State University</div>
+      <div class="edu-yr">Aug 2023 · State College, PA</div>
+      <ul class="blist">
+        <li>Focus: <strong>Predictive modeling &amp; statistical analysis</strong></li>
+        <li>Data-driven decision systems</li>
+        <li>Business intelligence &amp; forecasting</li>
+      </ul>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-badge">Undergraduate</div>
+      <div class="edu-deg">B.Tech — Mechanical Engineering</div>
+      <div class="edu-sch">Koneru Lakshmaiah University</div>
+      <div class="edu-yr">Jun 2018 · Vijayawada, India</div>
+      <ul class="blist">
+        <li>Foundation in <strong>systems thinking &amp; engineering</strong></li>
+        <li>PCEP Certified Python Programmer</li>
+        <li>PCAP Certified Associate Python Programmer</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-glow"></div>
+  <div class="open-badge reveal"><div class="ob-dot"></div>Open to senior roles &amp; AI collaborations</div>
+  <h2 class="c-h2 reveal">Have a hard problem?<br><span>Let's solve it.</span></h2>
+  <div class="contact-cards reveal">
+    <a href="mailto:bpunnamaraju@gmail.com" class="cc cc-v">✉ bpunnamaraju@gmail.com</a>
+    <a href="https://linkedin.com/in/brahmateja-punnamaraju" target="_blank" class="cc cc-o">LinkedIn</a>
+    <a href="tel:+14129096036" class="cc cc-o">+1 (412) 909-6036</a>
+  </div>
+</section>
+
+<footer>
+  <span style="display:flex;align-items:center;gap:8px"><div style="width:6px;height:6px;border-radius:50%;background:var(--v)"></div>Brahma Teja Punnamaraju</span>
+  <span>Data Scientist · AI Founder · Chicago, IL</span>
+  <span>bpunnamaraju@gmail.com</span>
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('vis'),i*60);io.unobserve(e.target)}
+  })
+},{threshold:0.07});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+function toggleE(h){
+  const c=h.closest('.exp-card'),open=c.classList.contains('open');
+  document.querySelectorAll('.exp-card.open').forEach(x=>x.classList.remove('open'));
+  if(!open)c.classList.add('open');
+}
+
+const secs=document.querySelectorAll('section[id]');
+const links=document.querySelectorAll('.nl a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(scrollY>=s.offsetTop-100)cur=s.id});
+  links.forEach(a=>a.style.color=a.getAttribute('href')==='#'+cur?'var(--vl)':'');
+});
+</script>
+</body>
+</html>
