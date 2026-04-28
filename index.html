@@ -351,20 +351,25 @@ footer{padding:24px 48px;border-top:1px solid var(--br2);display:flex;justify-co
         <div class="prob-block">
           <div class="pb-label">The Problem</div>
           <div class="kv-list">
-            <div class="kv"><span class="kv-k">Problem</span><span class="kv-v">Messages are fast — but meaning gets stripped out</span></div>
-            <div class="kv"><span class="kv-k">Root cause</span><span class="kv-v">"Communication Latency" — emotional metadata lost in text</span></div>
-            <div class="kv"><span class="kv-k">Cost</span><span class="kv-v">Misunderstandings, isolation, relational friction at work</span></div>
-            <div class="kv"><span class="kv-k">Gap</span><span class="kv-v">Efficiency-first messaging vs. accuracy-first understanding</span></div>
+            <div class="kv"><span class="kv-k">Psychological</span><span class="kv-v">"Communication Latency" — emotional metadata is stripped from text, causing misunderstandings and relational friction in personal life.</span></div>
+            <div class="kv"><span class="kv-k">Data Level</span><span class="kv-v">Thousands of daily digital messages remain unstructured and unanalyzed, hiding toxic conflict loops and behavioral patterns.</span></div>
           </div>
         </div>
 
         <div class="prob-block">
           <div class="pb-label">The Solution</div>
           <div class="kv-list">
-            <div class="kv"><span class="kv-k">Engine</span><span class="kv-v">LangChain + Pinecone — semantic memory &amp; intent analysis</span></div>
-            <div class="kv"><span class="kv-k">Method</span><span class="kv-v">Sentiment variance analysis + emotional metadata reconstruction</span></div>
-            <div class="kv"><span class="kv-k">Output</span><span class="kv-v">Real-time intent translation &amp; communication coaching</span></div>
-            <div class="kv"><span class="kv-k">Model</span><span class="kv-v">Llama / Cortex — 94% response accuracy in testing</span></div>
+            <div class="kv"><span class="kv-k">Engine</span><span class="kv-v">LangChain + Pinecone — semantic memory &amp; intent analysis over chat histories.</span></div>
+            <div class="kv"><span class="kv-k">Method</span><span class="kv-v">Sentiment variance analysis &amp; relationship-specific personality modeling.</span></div>
+          </div>
+        </div>
+
+        <div class="prob-block">
+          <div class="pb-label">Unique Value</div>
+          <div class="kv-list">
+            <div class="kv"><span class="kv-k">Profiling</span><span class="kv-v">You portray a unique personality to each person. This tool dynamically creates a tailored profile specific to that exact relationship.</span></div>
+            <div class="kv"><span class="kv-k">Decoding</span><span class="kv-v">Separates what was said from what was meant, reducing defensive reactions and de-escalating arguments based on that unique dynamic.</span></div>
+            <div class="kv"><span class="kv-k">Coaching</span><span class="kv-v">Translates emotional metadata into objective insights to repair and strengthen interpersonal bonds.</span></div>
           </div>
         </div>
       </div>
@@ -382,67 +387,58 @@ footer{padding:24px 48px;border-top:1px solid var(--br2);display:flex;justify-co
             </marker>
           </defs>
 
-          <!-- CENTER -->
-          <ellipse cx="220" cy="210" rx="68" ry="34" fill="rgba(124,111,224,.2)" stroke="#7C6FE0" stroke-width="1.5"/>
-          <text x="220" y="205" font-family="Sora,sans-serif" font-size="13" font-weight="700" fill="#A99EF0" text-anchor="middle">EMOBOT</text>
-          <text x="220" y="221" font-family="Space Grotesk,sans-serif" font-size="9" fill="#7A84A0" text-anchor="middle">Chat Analytics ETL</text>
+          <!-- CENTER (ENGINE) -->
+          <ellipse cx="220" cy="210" rx="74" ry="38" fill="rgba(124,111,224,.2)" stroke="#7C6FE0" stroke-width="1.5"/>
+          <text x="220" y="200" font-family="Sora,sans-serif" font-size="11" font-weight="700" fill="#A99EF0" text-anchor="middle">LLM ENGINE</text>
+          <text x="220" y="214" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">RAG + Tone Analysis</text>
+          <text x="220" y="226" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Profile Classification</text>
 
-          <!-- INPUT -->
-          <line x1="162" y1="198" x2="112" y2="148" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
-          <rect x="24" y="118" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
-          <text x="65" y="137" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">RAWZONE</text>
-          <text x="65" y="150" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Data Ingestion</text>
-          <text x="65" y="161" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">CSV / JSON / JSONL</text>
+          <!-- ARROWS FROM LEFT TO CENTER -->
+          <line x1="106" y1="155" x2="152" y2="186" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
+          <line x1="106" y1="265" x2="152" y2="234" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
 
-          <!-- NLP ENGINE -->
-          <line x1="162" y1="210" x2="108" y2="210" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
-          <rect x="24" y="187" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
-          <text x="65" y="206" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">DIMENSIONS</text>
-          <text x="65" y="219" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">SCD Type 2 Load</text>
-          <text x="65" y="230" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Users / Convos</text>
+          <!-- ARROWS FROM CENTER TO RIGHT -->
+          <line x1="288" y1="185" x2="334" y2="145" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
+          <line x1="294" y1="210" x2="334" y2="210" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
+          <line x1="288" y1="235" x2="334" y2="275" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
 
-          <!-- VECTOR DB -->
-          <line x1="162" y1="222" x2="112" y2="272" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
-          <rect x="24" y="256" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
-          <text x="65" y="275" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">DATABASE</text>
-          <text x="65" y="288" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">PostgreSQL 12+</text>
-          <text x="65" y="299" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Relational Storage</text>
+          <!-- LEFT: USER INPUT -->
+          <rect x="24" y="130" width="82" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
+          <text x="65" y="150" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">USER INPUT</text>
+          <text x="65" y="162" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Chat History +</text>
+          <text x="65" y="172" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">MBTI / Style</text>
 
-          <!-- LLM -->
-          <line x1="278" y1="198" x2="326" y2="148" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
-          <rect x="334" y="118" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
-          <text x="375" y="137" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">FACTS</text>
-          <text x="375" y="150" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Message Processor</text>
-          <text x="375" y="161" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">NLP &amp; Features</text>
+          <!-- LEFT: KNOWLEDGE BASE -->
+          <rect x="24" y="240" width="82" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
+          <text x="65" y="260" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">KNOWLEDGE</text>
+          <text x="65" y="272" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Cultural Rules</text>
+          <text x="65" y="282" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Classifiers</text>
 
-          <!-- COACHING -->
-          <line x1="278" y1="210" x2="332" y2="210" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
-          <rect x="334" y="187" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
-          <text x="375" y="206" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">AGGREGATES</text>
-          <text x="375" y="219" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Classification</text>
-          <text x="375" y="230" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Metrics &amp; Personality</text>
+          <!-- RIGHT: OUTPUT 1 -->
+          <rect x="334" y="120" width="82" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
+          <text x="375" y="140" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">RECOMMEND</text>
+          <text x="375" y="152" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Alt Phrasing</text>
+          <text x="375" y="162" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Tone Adjust</text>
 
-          <!-- OUTPUT -->
-          <line x1="278" y1="222" x2="326" y2="272" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
-          <rect x="334" y="256" width="82" height="46" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
-          <text x="375" y="275" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">ORCHESTRATION</text>
-          <text x="375" y="288" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Main Pipeline</text>
-          <text x="375" y="299" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Automated Flow</text>
+          <!-- RIGHT: OUTPUT 2 -->
+          <rect x="334" y="185" width="82" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
+          <text x="375" y="205" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">INSIGHTS</text>
+          <text x="375" y="217" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Conflict Alerts</text>
+          <text x="375" y="227" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Tone Trends</text>
 
-          <!-- TOP: PROBLEM -->
-          <line x1="220" y1="176" x2="220" y2="96" stroke="rgba(232,121,160,.4)" stroke-width="1" marker-end="url(#arr)"/>
-          <rect x="152" y="52" width="136" height="40" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(232,121,160,.3)" stroke-width="1"/>
-          <text x="220" y="70" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#E879A0" text-anchor="middle">ANALYTICS GOAL</text>
-          <text x="220" y="83" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Chat Data Standardization &amp; Insights</text>
+          <!-- RIGHT: OUTPUT 3 -->
+          <rect x="334" y="250" width="82" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
+          <text x="375" y="270" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">RESOLUTION</text>
+          <text x="375" y="282" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">De-escalation</text>
+          <text x="375" y="292" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Strategies</text>
 
-          <!-- BOTTOM: IMPACT -->
-          <line x1="220" y1="244" x2="220" y2="330" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
-          <rect x="148" y="332" width="144" height="40" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
-          <text x="220" y="350" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">IMPACT</text>
-          <text x="220" y="363" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Unstructured Text → Structured Features</text>
-
-          <!-- key stats at bottom -->
-          <text x="220" y="400" font-family="Space Grotesk,sans-serif" font-size="9" fill="rgba(124,111,224,.5)" text-anchor="middle">Scalable Ingestion · SCD Tracking · NLP Feature Extraction</text>
+          <!-- TOP: GOAL -->
+          <rect x="152" y="50" width="136" height="40" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(232,121,160,.3)" stroke-width="1"/>
+          <text x="220" y="68" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#E879A0" text-anchor="middle">ARCHITECTURAL FLOW</text>
+          <text x="220" y="81" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Inputs → RAG Engine → Relational Output</text>
+          
+          <!-- BOTTOM: STATS -->
+          <text x="220" y="400" font-family="Space Grotesk,sans-serif" font-size="9" fill="rgba(124,111,224,.5)" text-anchor="middle">Relationship-Specific Context · Actionable Insights · AI Mediation</text>
         </svg>
       </div>
 
