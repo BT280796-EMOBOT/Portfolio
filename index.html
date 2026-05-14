@@ -1,838 +1,2434 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio of Brahma Teja Punnamaraju - Data Scientist & AI Founder specializing in NLP, LLMs, and Data Engineering.">
-<meta property="og:title" content="Brahma Teja — Data Scientist & AI Founder">
-<meta property="og:description" content="Portfolio of Brahma Teja Punnamaraju - Data Scientist & AI Founder.">
-<meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Brahma+Teja+Portfolio">
-<meta property="og:url" content="https://yourwebsite.com">
-<meta name="twitter:card" content="summary_large_image">
-<title>Brahma Teja — Data Scientist & AI Founder</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#080C18;--bg2:#0E1528;--bg3:#131D35;--bg4:#1A2540;
-  --v:#7C6FE0;--vl:#A99EF0;--vd:rgba(124,111,224,.15);
-  --t:#2DD4BF;--td:rgba(45,212,191,.12);
-  --pk:#E879A0;
-  --w:#EEF0F8;--m:#7A84A0;
-  --br:rgba(124,111,224,.18);--br2:rgba(124,111,224,.08);
-  --r:12px;--rs:8px;
-}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--w);font-family:'Space Grotesk',sans-serif;overflow-x:hidden;line-height:1.5}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brahma Teja — Data Scientist, AI Consultant &amp; AI Founder</title>
+  <meta name="description"
+    content="Data Scientist, AI Consultant &amp; AI Founder. NLP · LLMs · AI Product. Chicago, IL.">
+  <meta property="og:title" content="Brahma Teja Punnamaraju — Data Scientist, AI Consultant &amp; AI Founder">
+  <meta property="og:description"
+    content="$130M+ impact. Building enterprise AI and SarthAI — relational intelligence platform.">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@300;400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 5px; border: 2px solid var(--bg); }
-::-webkit-scrollbar-thumb:hover { background: var(--v); }
+    :root {
+      --bg: #07090F;
+      --bg2: #0C1020;
+      --bg3: #111829;
+      --bg4: #162035;
+      --v: #7C6FE0;
+      --vl: #B4ABFF;
+      --vd: rgba(124, 111, 224, .13);
+      --t: #2DD4BF;
+      --td: rgba(45, 212, 191, .10);
+      --pk: #F472B6;
+      --pkd: rgba(244, 114, 182, .1);
+      --am: #F59E0B;
+      --amd: rgba(245, 158, 11, .1);
+      --w: #F0EEF8;
+      --w2: rgba(240, 238, 248, .65);
+      --m: #6B7594;
+      --br: rgba(124, 111, 224, .16);
+      --br2: rgba(124, 111, 224, .07);
+      --br3: rgba(255, 255, 255, .05);
+      --r: 14px;
+      --rs: 8px;
+    }
 
-/* Focus States */
-:focus-visible { outline: 2px solid var(--t); outline-offset: 3px; border-radius: 2px; }
+    html {
+      scroll-behavior: smooth
+    }
 
-/* SVG Animations */
-.flow-line { stroke-dasharray: 4,3; animation: flow 1s linear infinite; }
-@keyframes flow { to { stroke-dashoffset: -7; } }
+    body {
+      background: var(--bg);
+      color: var(--w);
+      font-family: 'Outfit', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.5
+    }
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:56px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(8,12,24,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--br2)}
-.nb{display:flex;align-items:center;gap:9px;text-decoration:none}
-.nd{width:8px;height:8px;border-radius:50%;background:var(--v);box-shadow:0 0 8px var(--v);animation:blink 2.5s infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-.nn{font-family:'Sora',sans-serif;font-size:14px;font-weight:600;color:var(--w)}
-.nl{display:flex;gap:24px;list-style:none}
-.nl a{font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--m);text-decoration:none;transition:color .2s}
-.nl a:hover{color:var(--vl)}
-.ncta{padding:6px 16px;background:var(--vd);border:1px solid var(--br);border-radius:999px;font-size:12px;font-weight:700;color:var(--vl);text-decoration:none;letter-spacing:.06em;transition:all .2s}
-.ncta:hover{background:rgba(124,111,224,.28);border-color:var(--v)}
+    /* ─ SCROLLBAR ─ */
+    ::-webkit-scrollbar {
+      width: 6px
+    }
 
-/* HERO */
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:90px 48px 72px;position:relative;overflow:hidden}
-.orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
-.o1{width:480px;height:480px;background:rgba(124,111,224,.1);top:-80px;right:-80px}
-.o2{width:280px;height:280px;background:rgba(45,212,191,.07);bottom:80px;left:-40px}
+    ::-webkit-scrollbar-track {
+      background: var(--bg)
+    }
 
-.hero-top{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:start;margin-bottom:48px}
-.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--t);margin-bottom:20px}
-.hero-badge::before{content:'';display:block;width:20px;height:1px;background:var(--t)}
-h1{font-family:'Sora',sans-serif;font-size:clamp(38px,6vw,68px);font-weight:700;line-height:1.05;color:var(--w);margin-bottom:10px}
-h1 span{background:linear-gradient(135deg,var(--vl),var(--t));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-role{font-size:16px;font-weight:400;color:var(--m);margin-bottom:24px}
+    ::-webkit-scrollbar-thumb {
+      background: var(--bg4);
+      border-radius: 3px
+    }
 
-/* identity chips */
-.id-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:0}
-.idc{padding:6px 14px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid;display:inline-flex;align-items:center;gap:6px}
-.idc-v{background:var(--vd);border-color:var(--br);color:var(--vl)}
-.idc-t{background:var(--td);border-color:rgba(45,212,191,.25);color:var(--t)}
-.idc-m{background:rgba(122,132,160,.1);border-color:rgba(122,132,160,.2);color:var(--m)}
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--v)
+    }
 
-/* stat block */
-.stat-block{display:flex;flex-direction:column;gap:10px;min-width:200px}
-.stat-row{padding:16px 20px;background:var(--bg2);border:1px solid var(--br2);border-radius:var(--r);display:flex;align-items:center;justify-content:space-between;gap:16px}
-.sv{font-family:'Sora',sans-serif;font-size:22px;font-weight:700;color:var(--vl)}
-.sl{font-size:12px;font-weight:500;color:var(--m);text-align:right;max-width:110px;line-height:1.3}
+    /* ─ FLOW ANIMATION ─ */
+    @keyframes flowDash {
+      to {
+        stroke-dashoffset: -14
+      }
+    }
 
-.hero-cta{display:flex;gap:12px;margin-top:32px}
-.btn{padding:11px 22px;border-radius:var(--rs);font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;letter-spacing:.05em;text-decoration:none;cursor:pointer;border:none;transition:all .2s;display:inline-flex;align-items:center;gap:7px}
-.bv{background:var(--v);color:#fff}
-.bv:hover{background:var(--vl);transform:translateY(-2px)}
-.bo{background:transparent;border:1px solid var(--br);color:var(--m)}
-.bo:hover{border-color:var(--v);color:var(--vl);transform:translateY(-2px)}
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(22px)
+      }
 
-/* SECTIONS */
-section{padding:88px 48px;position:relative}
-.sh{display:flex;align-items:center;gap:14px;margin-bottom:52px}
-.stag{font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--t);padding:3px 10px;background:var(--td);border-radius:999px;border:1px solid rgba(45,212,191,.2)}
-.st{font-family:'Sora',sans-serif;font-size:clamp(22px,3vw,32px);font-weight:700;color:var(--w)}
-.sl2{flex:1;height:1px;background:linear-gradient(90deg,var(--br),transparent)}
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
 
-/* ── ABOUT ── */
-#about{background:var(--bg2)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    @keyframes blink {
 
-.info-card{background:var(--bg3);border:1px solid var(--br2);border-radius:var(--r);padding:24px;transition:border-color .25s,transform .25s}
-.info-card:hover{border-color:var(--br);transform:translateY(-3px)}
-.ic-head{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--br2)}
-.ic-icon{width:32px;height:32px;border-radius:var(--rs);background:var(--vd);display:flex;align-items:center;justify-content:center;font-size:15px}
-.ic-title{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--vl)}
+      0%,
+      100% {
+        opacity: 1
+      }
 
-.blist{list-style:none;display:flex;flex-direction:column;gap:7px}
-.blist li{font-size:13px;color:rgba(238,240,248,.7);padding-left:16px;position:relative;line-height:1.55}
-.blist li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:1px;background:var(--t)}
-.blist li strong{color:var(--vl);font-weight:600}
+      50% {
+        opacity: .25
+      }
+    }
 
-.tag-grid{display:flex;flex-wrap:wrap;gap:6px}
-.tg{font-size:12px;padding:4px 11px;border-radius:999px;background:rgba(124,111,224,.07);border:1px solid rgba(124,111,224,.18);color:rgba(238,240,248,.75);transition:all .2s;cursor:default}
-.tg:hover{background:var(--vd);border-color:var(--v);color:var(--vl)}
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
 
-/* cert row */
-.cert-row{display:flex;gap:10px;flex-direction:column}
-.cert{padding:10px 14px;background:var(--bg4);border:1px solid var(--br2);border-radius:var(--rs);font-size:12px;color:var(--m);display:flex;align-items:center;gap:8px}
-.cert-dot{width:6px;height:6px;border-radius:50%;background:var(--v);flex-shrink:0}
+    @keyframes pulseRing {
+      0% {
+        transform: scale(1);
+        opacity: .6
+      }
 
-/* ── SARTHAI ── */
-#founder{background:var(--bg)}
-.founder-shell{background:var(--bg2);border:1px solid var(--br);border-radius:18px;overflow:hidden}
-.founder-top{display:grid;grid-template-columns:1fr 1fr;gap:0}
-.founder-left{padding:40px;border-right:1px solid var(--br2)}
-.founder-right{padding:40px}
-.ft-bar{height:3px;background:linear-gradient(90deg,var(--v),var(--t),var(--v))}
+      100% {
+        transform: scale(1.5);
+        opacity: 0
+      }
+    }
 
-.f-badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--vl);border:1px solid var(--br);padding:4px 12px;border-radius:999px;background:var(--vd);margin-bottom:20px}
-.f-h2{font-family:'Sora',sans-serif;font-size:28px;font-weight:700;color:var(--w);margin-bottom:6px;line-height:1.15}
-.f-h2 span{background:linear-gradient(135deg,var(--vl),var(--t));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.f-sub{font-size:13px;color:var(--m);margin-bottom:24px}
+    /* ─ NAV ─ */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      height: 58px;
+      padding: 0 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(7, 9, 15, .88);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--br2)
+    }
 
-.prob-block{margin-bottom:24px}
-.pb-label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--t);margin-bottom:10px}
+    .nb {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none
+    }
 
-.kv-list{display:flex;flex-direction:column;gap:8px}
-.kv{display:flex;align-items:start;gap:12px;padding:10px 14px;background:var(--bg3);border:1px solid var(--br2);border-radius:var(--rs)}
-.kv-k{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--v);min-width:130px;padding-top:1px}
-.kv-v{font-size:12.5px;color:rgba(238,240,248,.7);line-height:1.5}
+    .nd-wrap {
+      position: relative;
+      width: 10px;
+      height: 10px
+    }
 
-/* metrics strip */
-.metrics-strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--br2)}
-.ms-item{padding:20px 22px;border-right:1px solid var(--br2);background:var(--bg3)}
-.ms-item:last-child{border-right:none}
-.ms-val{font-family:'Sora',sans-serif;font-size:24px;font-weight:700;color:var(--t);margin-bottom:3px}
-.ms-lbl{font-size:12px;font-weight:500;color:var(--m);letter-spacing:.04em}
+    .nd {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--t);
+      box-shadow: 0 0 8px var(--t);
+      animation: blink 2.5s infinite;
+      position: relative;
+      z-index: 1
+    }
 
-/* MINDMAP SVG */
-.mindmap-wrap{padding:20px 40px 36px;border-top:1px solid var(--br2)}
-.mindmap-title{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--m);margin-bottom:16px}
+    .nd::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: var(--t);
+      animation: pulseRing 2s infinite;
+      opacity: 0
+    }
 
-/* ── EXPERIENCE ── */
-#experience{background:var(--bg2)}
-.exp-list{display:flex;flex-direction:column;gap:10px}
-.exp-card{background:var(--bg3);border:1px solid var(--br2);border-radius:var(--r);overflow:hidden;transition:border-color .25s}
-.exp-card:hover{border-color:var(--br)}
-.exp-h{padding:18px 24px;display:flex;align-items:center;gap:14px;cursor:pointer;user-select:none}
-.exp-dot{width:10px;height:10px;border-radius:50%;background:var(--v);flex-shrink:0;box-shadow:0 0 5px var(--v)}
-.exp-dot.cur{background:var(--t);box-shadow:0 0 5px var(--t)}
-.exp-info{flex:1}
-.exp-role{font-size:14px;font-weight:600;color:var(--w)}
-.exp-co{font-size:12px;color:var(--vl);font-weight:500}
-.exp-date{font-size:12px;font-weight:600;color:var(--m);padding:3px 10px;background:var(--bg4);border-radius:999px;white-space:nowrap;flex-shrink:0}
-.exp-chev{font-size:12px;color:var(--m);transition:transform .3s}
-.exp-card.open .exp-chev{transform:rotate(180deg)}
-.exp-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
-.exp-card.open .exp-body{max-height:500px}
-.exp-inner{padding:0 24px 20px 48px;border-top:1px solid var(--br2)}
+    .nn {
+      font-family: 'Sora', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--w);
+      letter-spacing: -.01em
+    }
 
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
-.exp-col-title{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t);margin-bottom:8px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.chip{font-size:12px;font-weight:600;padding:3px 11px;border-radius:999px;background:rgba(45,212,191,.08);border:1px solid rgba(45,212,191,.2);color:var(--t)}
-.chip-v{background:var(--vd);border-color:rgba(124,111,224,.25);color:var(--vl)}
+    .nl {
+      display: flex;
+      gap: 28px;
+      list-style: none
+    }
 
-/* ── SKILLS ── */
-#skills{background:var(--bg)}
-.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.sk-card{padding:24px;background:var(--bg2);border:1px solid var(--br2);border-radius:var(--r);transition:border-color .25s,transform .25s}
-.sk-card:hover{border-color:var(--br);transform:translateY(-3px)}
-.sk-head{display:flex;align-items:center;gap:9px;margin-bottom:16px}
-.sk-icon{width:30px;height:30px;border-radius:var(--rs);background:var(--vd);display:flex;align-items:center;justify-content:center;font-size:14px}
-.sk-title{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--vl)}
+    .nl a {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: .06em;
+      color: var(--m);
+      text-decoration: none;
+      transition: color .2s
+    }
 
-/* ── FLOWCHART / VISION ── */
-#vision{background:var(--bg2)}
-.vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
-.vision-list{display:flex;flex-direction:column;gap:10px}
-.vision-item{display:flex;gap:14px;padding:16px 18px;background:var(--bg3);border:1px solid var(--br2);border-radius:var(--r);align-items:start;transition:border-color .2s,transform .2s}
-.vision-item:hover{border-color:var(--br);transform:translateX(4px)}
-.vi-num{font-family:'Sora',sans-serif;font-size:22px;font-weight:700;color:rgba(124,111,224,.2);line-height:1;flex-shrink:0;min-width:28px}
-.vi-title{font-size:13px;font-weight:600;color:var(--vl);margin-bottom:4px}
-.vi-pts{list-style:none;display:flex;flex-direction:column;gap:3px}
-.vi-pts li{font-size:12px;color:var(--m);padding-left:12px;position:relative}
-.vi-pts li::before{content:'·';position:absolute;left:3px;color:var(--t)}
+    .nl a:hover,
+    .nl a.active {
+      color: var(--vl)
+    }
 
-/* ── EDUCATION ── */
-#education{background:var(--bg)}
-.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.edu-card{padding:28px;background:var(--bg2);border:1px solid var(--br2);border-radius:var(--r);transition:border-color .25s,transform .25s;position:relative;overflow:hidden}
-.edu-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--v),var(--t));opacity:.5}
-.edu-card:hover{border-color:var(--br);transform:translateY(-3px)}
-.edu-badge{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--vl);padding:3px 10px;background:var(--vd);border-radius:999px;display:inline-block;margin-bottom:14px}
-.edu-deg{font-family:'Sora',sans-serif;font-size:17px;font-weight:700;color:var(--w);margin-bottom:4px;line-height:1.25}
-.edu-sch{font-size:12px;font-weight:500;color:var(--vl);margin-bottom:3px}
-.edu-yr{font-size:12px;color:var(--m);margin-bottom:14px}
+    .nav-right {
+      display: flex;
+      gap: 10px;
+      align-items: center
+    }
 
-/* ── CONTACT ── */
-#contact{background:var(--bg2);text-align:center}
-.contact-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(124,111,224,.1) 0%,transparent 70%);pointer-events:none}
-.c-h2{font-family:'Sora',sans-serif;font-size:clamp(24px,3.5vw,42px);font-weight:700;color:var(--w);margin-bottom:28px;position:relative}
-.c-h2 span{background:linear-gradient(135deg,var(--vl),var(--t));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.contact-cards{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;position:relative}
-.cc{padding:14px 24px;border-radius:var(--r);font-size:13px;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:8px;transition:all .2s}
-.cc-v{background:var(--v);color:#fff}
-.cc-v:hover{background:var(--vl);transform:translateY(-2px)}
-.cc-o{background:var(--bg3);border:1px solid var(--br);color:var(--m)}
-.cc-o:hover{border-color:var(--v);color:var(--vl);transform:translateY(-2px)}
-.open-badge{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--t);padding:6px 16px;background:var(--td);border:1px solid rgba(45,212,191,.2);border-radius:999px;margin-bottom:24px}
-.ob-dot{width:6px;height:6px;border-radius:50%;background:var(--t);animation:blink 2s infinite}
+    .nbtn {
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .05em;
+      text-decoration: none;
+      transition: all .2s;
+      cursor: pointer;
+      border: none
+    }
 
-/* footer */
-footer{padding:24px 48px;border-top:1px solid var(--br2);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--m)}
+    .nbtn-ghost {
+      background: transparent;
+      border: 1px solid var(--br);
+      color: var(--m)
+    }
 
-/* reveal */
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
-.reveal.vis{opacity:1;transform:none}
+    .nbtn-ghost:hover {
+      border-color: var(--t);
+      color: var(--t)
+    }
 
-@media(max-width:768px){
-  nav{padding:0 16px}.nl{display:none}
-  section{padding:64px 16px}
-  .hero{padding:80px 16px 60px}
-  .hero-top,.about-grid,.founder-top,.two-col,.skills-grid,.vision-grid,.edu-grid{grid-template-columns:1fr}
-  .metrics-strip{grid-template-columns:1fr 1fr}
-  footer{flex-direction:column;gap:6px;text-align:center}
-}
-</style>
+    .nbtn-solid {
+      background: var(--v);
+      color: #fff
+    }
+
+    .nbtn-solid:hover {
+      background: var(--vl);
+      transform: translateY(-1px)
+    }
+
+    /* ─ HERO ─ */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 52px;
+      align-items: center;
+      padding: 100px 52px 80px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none
+    }
+
+    .o1 {
+      width: 600px;
+      height: 600px;
+      background: rgba(124, 111, 224, 0.25);
+      top: -200px;
+      right: -200px
+    }
+
+    .o2 {
+      width: 350px;
+      height: 350px;
+      background: rgba(45, 212, 191, 0.15);
+      bottom: 50px;
+      left: -100px
+    }
+
+    .o3 {
+      width: 300px;
+      height: 300px;
+      background: rgba(244, 114, 182, 0.20);
+      top: 200px;
+      left: 300px
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 22px;
+      animation: fadeUp .6s .1s both
+    }
+
+    .he-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--t)
+    }
+
+    .he-txt {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--t);
+      letter-spacing: .1em
+    }
+
+    h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(40px, 5.5vw, 64px);
+      font-weight: 800;
+      line-height: 1.0;
+      letter-spacing: -.02em;
+      color: var(--w);
+      margin-bottom: 6px;
+      animation: fadeUp .6s .2s both
+    }
+
+    .h1-sub {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(40px, 5.5vw, 64px);
+      font-weight: 300;
+      line-height: 1.0;
+      letter-spacing: -.02em;
+      background: linear-gradient(135deg, var(--vl) 0%, var(--t) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 20px;
+      animation: fadeUp .6s .25s both
+    }
+
+    .seeking-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      background: rgba(245, 158, 11, .08);
+      border: 1px solid rgba(245, 158, 11, .25);
+      border-radius: var(--rs);
+      margin-bottom: 24px;
+      animation: fadeUp .6s .3s both
+    }
+
+    .sb-icon {
+      font-size: 14px
+    }
+
+    .sb-text {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--am);
+      letter-spacing: .05em
+    }
+
+    .sb-role {
+      font-weight: 500;
+      color: #FCD34D
+    }
+
+    .chips-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 28px;
+      animation: fadeUp .6s .35s both
+    }
+
+    .chip-id {
+      padding: 5px 13px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 500;
+      border: 1px solid;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px
+    }
+
+    .ci-v {
+      background: var(--vd);
+      border-color: rgba(124, 111, 224, .25);
+      color: var(--vl)
+    }
+
+    .ci-t {
+      background: var(--td);
+      border-color: rgba(45, 212, 191, .2);
+      color: var(--t)
+    }
+
+    .ci-m {
+      background: var(--br3);
+      border-color: rgba(255, 255, 255, .08);
+      color: var(--m)
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      animation: fadeUp .6s .4s both
+    }
+
+    .btn {
+      padding: 11px 24px;
+      border-radius: var(--rs);
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .02em;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all .22s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .btn-solid {
+      background: var(--v);
+      color: #fff
+    }
+
+    .btn-solid:hover {
+      background: var(--vl);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(124, 111, 224, .3)
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid var(--br);
+      color: var(--m)
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--v);
+      color: var(--vl);
+      transform: translateY(-2px)
+    }
+
+    .btn-teal {
+      background: transparent;
+      border: 1px solid rgba(45, 212, 191, .3);
+      color: var(--t)
+    }
+
+    .btn-teal:hover {
+      background: var(--td);
+      border-color: var(--t);
+      transform: translateY(-2px)
+    }
+
+    /* STAT STACK */
+    .stat-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      animation: fadeUp .6s .45s both
+    }
+
+    .stat-card {
+      padding: 16px 20px;
+      background: var(--bg2);
+      border: 1px solid var(--br2);
+      border-radius: var(--r);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      transition: border-color .2s, transform .2s
+    }
+
+    .stat-card:hover {
+      border-color: var(--br);
+      transform: translateX(-3px)
+    }
+
+    .sv {
+      font-family: 'Sora', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--vl);
+      line-height: 1
+    }
+
+    .sl {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--m);
+      text-align: right;
+      max-width: 110px;
+      line-height: 1.35
+    }
+
+    /* ─ SECTIONS ─ */
+    section {
+      padding: 84px 52px;
+      position: relative
+    }
+
+    .sh {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 48px
+    }
+
+    .stag {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--t);
+      padding: 4px 11px;
+      background: var(--td);
+      border-radius: 999px;
+      border: 1px solid rgba(45, 212, 191, .18);
+      white-space: nowrap
+    }
+
+    .st {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(20px, 2.8vw, 30px);
+      font-weight: 700;
+      color: var(--w);
+      letter-spacing: -.01em
+    }
+
+    .sline {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--br), transparent)
+    }
+
+    /* ─ ABOUT ─ */
+    #about {
+      background: var(--bg2)
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px
+    }
+
+    .icard {
+      background: var(--bg3);
+      border: 1px solid var(--br2);
+      border-radius: var(--r);
+      padding: 22px;
+      transition: border-color .25s, transform .25s
+    }
+
+    .icard:hover {
+      border-color: var(--br);
+      transform: translateY(-3px)
+    }
+
+    .icard-head {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 16px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid var(--br2)
+    }
+
+    .icard-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: var(--rs);
+      background: var(--vd);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0
+    }
+
+    .icard-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--vl)
+    }
+
+    .blist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px
+    }
+
+    .blist li {
+      font-size: 13px;
+      color: var(--w2);
+      padding-left: 15px;
+      position: relative;
+      line-height: 1.55
+    }
+
+    .blist li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 5px;
+      height: 1px;
+      background: var(--t)
+    }
+
+    .blist li strong {
+      color: var(--vl);
+      font-weight: 600
+    }
+
+    .blist li em {
+      color: var(--w);
+      font-style: normal
+    }
+
+    .pill-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px
+    }
+
+    .pill {
+      font-size: 11.5px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: rgba(124, 111, 224, .07);
+      border: 1px solid rgba(124, 111, 224, .16);
+      color: rgba(240, 238, 248, .72);
+      transition: all .2s;
+      cursor: default
+    }
+
+    .pill:hover {
+      background: var(--vd);
+      border-color: var(--v);
+      color: var(--vl)
+    }
+
+    .cert-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px
+    }
+
+    .cert {
+      padding: 9px 13px;
+      background: var(--bg4);
+      border: 1px solid var(--br2);
+      border-radius: var(--rs);
+      font-size: 12px;
+      color: var(--m);
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .cdot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--v);
+      flex-shrink: 0
+    }
+
+    /* SEEKING CARD - full width */
+    .seeking-card {
+      grid-column: 1/-1;
+      background: linear-gradient(135deg, rgba(245, 158, 11, .06) 0%, rgba(124, 111, 224, .06) 100%);
+      border: 1px solid rgba(245, 158, 11, .2);
+      border-radius: var(--r);
+      padding: 22px 28px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 20px;
+      align-items: center
+    }
+
+    .sk-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--am);
+      margin-bottom: 8px
+    }
+
+    .sk-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px
+    }
+
+    .sk-item {
+      padding: 5px 13px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(245, 158, 11, .1);
+      border: 1px solid rgba(245, 158, 11, .25);
+      color: #FCD34D
+    }
+
+    .sk-divider {
+      width: 1px;
+      background: var(--br2);
+      align-self: stretch
+    }
+
+    /* ─ SARTHAI ─ */
+    #founder {
+      background: var(--bg)
+    }
+
+    .f-shell {
+      background: var(--bg2);
+      border: 1px solid var(--br);
+      border-radius: 18px;
+      overflow: hidden
+    }
+
+    .f-topbar {
+      height: 3px;
+      background: linear-gradient(90deg, var(--v), var(--t), var(--pk))
+    }
+
+    .f-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr
+    }
+
+    .f-left {
+      padding: 36px;
+      border-right: 1px solid var(--br2)
+    }
+
+    .f-right {
+      padding: 36px;
+      background: var(--bg3)
+    }
+
+    .f-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--t);
+      border: 1px solid rgba(45, 212, 191, .2);
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: var(--td);
+      margin-bottom: 18px
+    }
+
+    .f-h {
+      font-family: 'Sora', sans-serif;
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--w);
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      margin-bottom: 4px
+    }
+
+    .f-h span {
+      background: linear-gradient(135deg, var(--vl), var(--t));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text
+    }
+
+    .f-sub {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--m);
+      letter-spacing: .04em;
+      margin-bottom: 26px
+    }
+
+    .kv-section {
+      margin-bottom: 20px
+    }
+
+    .kv-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--t);
+      margin-bottom: 8px
+    }
+
+    .kv-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px
+    }
+
+    .kv {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+      padding: 9px 13px;
+      background: var(--bg3);
+      border: 1px solid var(--br2);
+      border-radius: var(--rs)
+    }
+
+    .kv-k {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--v);
+      min-width: 76px;
+      padding-top: 1px;
+      flex-shrink: 0
+    }
+
+    .kv-v {
+      font-size: 12.5px;
+      color: var(--w2);
+      line-height: 1.5
+    }
+
+    /* traction row */
+    .traction-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--br2)
+    }
+
+    .tr-item {
+      padding: 12px 14px;
+      background: var(--bg4);
+      border-radius: var(--rs);
+      text-align: center
+    }
+
+    .tr-val {
+      font-family: 'Sora', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--t);
+      margin-bottom: 2px
+    }
+
+    .tr-lbl {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      color: var(--m);
+      letter-spacing: .06em
+    }
+
+    /* market row */
+    .market-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 20px
+    }
+
+    .mr-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background: var(--bg4);
+      border-radius: var(--rs)
+    }
+
+    .mr-k {
+      font-size: 12px;
+      color: var(--m)
+    }
+
+    .mr-v {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--w)
+    }
+
+    /* metrics strip */
+    .mstrip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--br2)
+    }
+
+    .ms {
+      padding: 18px 20px;
+      border-right: 1px solid var(--br2);
+      background: var(--bg3)
+    }
+
+    .ms:last-child {
+      border-right: none
+    }
+
+    .ms-v {
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--t);
+      margin-bottom: 2px
+    }
+
+    .ms-l {
+      font-size: 11px;
+      color: var(--m)
+    }
+
+    /* ─ EXPERIENCE ─ */
+    #experience {
+      background: var(--bg2)
+    }
+
+    .exp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px
+    }
+
+    .exp-card {
+      background: var(--bg3);
+      border: 1px solid var(--br2);
+      border-radius: var(--r);
+      overflow: hidden;
+      transition: border-color .25s
+    }
+
+    .exp-card:hover {
+      border-color: var(--br)
+    }
+
+    .exp-h {
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      user-select: none
+    }
+
+    .exp-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--v);
+      flex-shrink: 0;
+      box-shadow: 0 0 5px var(--v)
+    }
+
+    .exp-dot.cur {
+      background: var(--t);
+      box-shadow: 0 0 7px var(--t)
+    }
+
+    .exp-info {
+      flex: 1;
+      min-width: 0
+    }
+
+    .exp-role {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--w)
+    }
+
+    .exp-co {
+      font-size: 12px;
+      color: var(--vl);
+      font-weight: 500
+    }
+
+    .exp-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: var(--m);
+      padding: 3px 9px;
+      background: var(--bg4);
+      border-radius: 999px;
+      white-space: nowrap;
+      flex-shrink: 0
+    }
+
+    .exp-chev {
+      font-size: 11px;
+      color: var(--m);
+      transition: transform .3s;
+      flex-shrink: 0
+    }
+
+    .exp-card.open .exp-chev {
+      transform: rotate(180deg)
+    }
+
+    .exp-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease
+    }
+
+    .exp-card.open .exp-body {
+      max-height: 600px
+    }
+
+    .exp-inner {
+      padding: 0 22px 20px 43px;
+      border-top: 1px solid var(--br2)
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 14px
+    }
+
+    .col-lbl {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--t);
+      margin-bottom: 8px
+    }
+
+    .tchips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 10px
+    }
+
+    .tc {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: rgba(45, 212, 191, .07);
+      border: 1px solid rgba(45, 212, 191, .18);
+      color: var(--t)
+    }
+
+    .tc-v {
+      background: var(--vd);
+      border-color: rgba(124, 111, 224, .22);
+      color: var(--vl)
+    }
+
+    .tc-pk {
+      background: var(--pkd);
+      border-color: rgba(244, 114, 182, .2);
+      color: var(--pk)
+    }
+
+    /* ─ SKILLS ─ */
+    #skills {
+      background: var(--bg)
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px
+    }
+
+    .sk {
+      padding: 22px;
+      background: var(--bg2);
+      border: 1px solid var(--br2);
+      border-radius: var(--r);
+      transition: border-color .25s, transform .25s
+    }
+
+    .sk:hover {
+      border-color: var(--br);
+      transform: translateY(-3px)
+    }
+
+    .sk-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px
+    }
+
+    .sk-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--vd);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      flex-shrink: 0
+    }
+
+    .sk-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--vl)
+    }
+
+    /* ─ CURIOSITY ─ */
+    #curiosity {
+      background: var(--bg2)
+    }
+
+    .curiosity-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start
+    }
+
+    .cur-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px
+    }
+
+    .cur-item {
+      display: flex;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--bg3);
+      border: 1px solid var(--br2);
+      border-radius: var(--r);
+      align-items: start;
+      transition: border-color .2s, transform .2s
+    }
+
+    .cur-item:hover {
+      border-color: var(--br);
+      transform: translateX(4px)
+    }
+
+    .ci-num {
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: rgba(124, 111, 224, .15);
+      line-height: 1;
+      flex-shrink: 0;
+      min-width: 26px
+    }
+
+    .ci-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--vl);
+      margin-bottom: 4px
+    }
+
+    .ci-pts {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px
+    }
+
+    .ci-pts li {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--m);
+      padding-left: 12px;
+      position: relative
+    }
+
+    .ci-pts li::before {
+      content: '·';
+      position: absolute;
+      left: 3px;
+      color: var(--t)
+    }
+
+    /* pipeline chart */
+    .pipe-wrap {}
+
+    .pipe-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--m);
+      margin-bottom: 14px
+    }
+
+    /* ─ EDUCATION ─ */
+    #education {
+      background: var(--bg)
+    }
+
+    .edu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px
+    }
+
+    .edu-card {
+      padding: 26px;
+      background: var(--bg2);
+      border: 1px solid var(--br2);
+      border-radius: var(--r);
+      position: relative;
+      overflow: hidden;
+      transition: border-color .25s, transform .25s
+    }
+
+    .edu-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--v), var(--t));
+      opacity: .4
+    }
+
+    .edu-card:hover {
+      border-color: var(--br);
+      transform: translateY(-3px)
+    }
+
+    .edu-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--vl);
+      padding: 3px 10px;
+      background: var(--vd);
+      border-radius: 999px;
+      display: inline-block;
+      margin-bottom: 12px
+    }
+
+    .edu-deg {
+      font-family: 'Sora', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--w);
+      margin-bottom: 3px;
+      line-height: 1.25;
+      letter-spacing: -.01em
+    }
+
+    .edu-sch {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--vl);
+      margin-bottom: 2px
+    }
+
+    .edu-yr {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--m);
+      margin-bottom: 12px
+    }
+
+    /* ─ CONTACT ─ */
+    #contact {
+      background: var(--bg2);
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 80px
+    }
+
+    .contact-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124, 111, 224, .08) 0%, transparent 65%);
+      pointer-events: none
+    }
+
+    .c-h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(26px, 4vw, 46px);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      color: var(--w);
+      margin-bottom: 12px;
+      position: relative
+    }
+
+    .c-h2 span {
+      background: linear-gradient(135deg, var(--vl), var(--t));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text
+    }
+
+    .c-sub {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--m);
+      letter-spacing: .05em;
+      margin-bottom: 32px;
+      position: relative
+    }
+
+    .c-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: relative
+    }
+
+    .cc {
+      padding: 13px 22px;
+      border-radius: var(--r);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all .2s
+    }
+
+    .cc-v {
+      background: var(--v);
+      color: #fff
+    }
+
+    .cc-v:hover {
+      background: var(--vl);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(124, 111, 224, .3)
+    }
+
+    .cc-o {
+      background: var(--bg3);
+      border: 1px solid var(--br);
+      color: var(--m)
+    }
+
+    .cc-o:hover {
+      border-color: var(--v);
+      color: var(--vl);
+      transform: translateY(-2px)
+    }
+
+    .ob-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--t);
+      padding: 7px 18px;
+      background: var(--td);
+      border: 1px solid rgba(45, 212, 191, .18);
+      border-radius: 999px;
+      margin-bottom: 22px
+    }
+
+    .ob-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--t);
+      animation: blink 2s infinite
+    }
+
+    /* ─ FOOTER ─ */
+    footer {
+      padding: 22px 52px;
+      border-top: 1px solid var(--br2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--m)
+    }
+
+    /* ─ REVEAL ─ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .65s ease, transform .65s ease
+    }
+
+    .reveal.vis {
+      opacity: 1;
+      transform: none
+    }
+
+    /* ─ MOBILE ─ */
+    @media(max-width:820px) {
+      nav {
+        padding: 0 18px
+      }
+
+      .nl {
+        display: none
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 88px 18px 60px
+      }
+
+      .stat-stack {
+        flex-direction: row;
+        flex-wrap: wrap
+      }
+
+      .stat-card {
+        flex: 1;
+        min-width: 140px
+      }
+
+      section {
+        padding: 64px 18px
+      }
+
+      .about-grid,
+      .f-grid,
+      .two-col,
+      .skills-grid,
+      .curiosity-grid,
+      .edu-grid {
+        grid-template-columns: 1fr
+      }
+
+      .mstrip {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .seeking-card {
+        grid-template-columns: 1fr
+      }
+
+      .sk-divider {
+        display: none
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        padding: 18px
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav>
-  <a class="nb" href="#"><div class="nd"></div><span class="nn">Brahma Teja</span></a>
-  <ul class="nl">
-    <li><a href="#about">About</a></li>
-    <li><a href="#founder">SarthAI</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div style="display:flex;gap:12px;">
-    <a href="resume.pdf" target="_blank" class="ncta" style="background:transparent;border-color:var(--t);color:var(--t);">Download Resume</a>
-    <a href="mailto:tejapbt@gmail.com" class="ncta">Reach Out</a>
-  </div>
-</nav>
+  <!-- ═══ NAV ═══ -->
+  <nav>
+    <a class="nb" href="#">
+      <div class="nd-wrap">
+        <div class="nd"></div>
+      </div>
+      <span class="nn">Brahma Teja</span>
+    </a>
+    <ul class="nl">
+      <li><a href="#about">About</a></li>
+      <li><a href="#founder">SarthAI</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://www.linkedin.com/in/p-brahma-teja/" target="_blank" class="nbtn nbtn-ghost">LinkedIn ↗</a>
+      <a href="https://drive.google.com/file/d/YOUR_RESUME_ID/view" target="_blank" class="nbtn nbtn-ghost">Resume ↓</a>
+      <a href="mailto:tejapbt@gmail.com" class="nbtn nbtn-solid">Say Hello ✉</a>
+    </div>
+  </nav>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="orb o1"></div><div class="orb o2"></div>
-  <div class="hero-top">
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
     <div>
-      <div class="hero-badge">Chicago, IL · Open to Opportunities</div>
-      <h1>Brahma Teja<br><span>Punnamaraju</span></h1>
-      <p class="hero-role">Data Scientist &amp; AI Founder</p>
-      <div class="id-chips">
-        <span class="idc idc-v">🧠 NLP &amp; LLMs</span>
-        <span class="idc idc-v">⚙️ Data Engineering</span>
-        <span class="idc idc-t">🚀 AI Founder · SarthAI</span>
-        <span class="idc idc-t">📊 Predictive Modeling</span>
-        <span class="idc idc-m">Penn State MBA · 2023</span>
-        <span class="idc idc-m">5+ yrs Enterprise AI</span>
+      <div class="hero-eyebrow">
+        <div class="he-dot"></div><span class="he-txt">Chicago, IL</span>
       </div>
-      <div class="hero-cta">
-        <a href="#contact" class="btn bv">Let's Talk →</a>
-        <a href="#experience" class="btn bo">View Work</a>
-        <a href="resume.pdf" target="_blank" class="btn bo" style="border-color:var(--t);color:var(--t);">↓ Download Resume</a>
+      <h1>Brahma Teja</h1>
+      <div class="h1-sub">Punnamaraju</div>
+
+      <!-- SEEKING SIGNAL — RECRUITER FIX #1 -->
+      <div class="seeking-banner">
+        <span class="sb-icon">🎯</span>
+        <span class="sb-text">Skilled to excel at: <span class="sb-role">Data Scientist / AI Consultant · Gen AI
+            Engineer · AI
+            Product/Project Manager</span></span>
       </div>
-    </div>
-    <div class="stat-block">
-      <div class="stat-row"><span class="sv">$10M+</span><span class="sl">Annual savings driven</span></div>
-      <div class="stat-row"><span class="sv">$120M</span><span class="sl">Revenue influenced</span></div>
-      <div class="stat-row"><span class="sv">5+ yrs</span><span class="sl">Enterprise AI/data</span></div>
-      <div class="stat-row"><span class="sv">3</span><span class="sl">Industries: auto · health · tech</span></div>
-    </div>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="sh reveal"><span class="stag">01 · About</span><h2 class="st">At a Glance</h2><div class="sl2"></div></div>
-  <div class="about-grid">
+      <div class="chips-row">
+        <span class="chip-id ci-v">🧠 NLP &amp; LLMs</span>
+        <span class="chip-id ci-v">💡 AI Product Management</span>
+        <span class="chip-id ci-t">🚀 Founder · SarthAI</span>
+        <span class="chip-id ci-t">📊 Predictive Modeling</span>
+        <span class="chip-id ci-m">Penn State MS · 2023</span>
+        <span class="chip-id ci-m">5+ yrs · 3 Industries</span>
+      </div>
 
-    <div class="info-card reveal">
-      <div class="ic-head"><div class="ic-icon">👤</div><span class="ic-title">Who I am</span></div>
-      <ul class="blist">
-        <li><strong>Data Scientist &amp; AI Founder</strong> — Chicago area</li>
-        <li>Grad: <strong>MS Business Analytics (STEM)</strong>, Penn State 2023</li>
-        <li>Currently: <strong>Kavi Global</strong> — enterprise AI &amp; ETL</li>
-        <li>Building: <strong>SarthAI</strong> — relational intelligence platform</li>
-        <li>Focus: NLP, LLMs, optimization, Gen AI deployment</li>
-        <li>Industries: <strong>Healthcare · Automotive · Tech · Policy</strong></li>
-      </ul>
-    </div>
-
-    <div class="info-card reveal">
-      <div class="ic-head"><div class="ic-icon">💡</div><span class="ic-title">What drives me</span></div>
-      <ul class="blist">
-        <li>Obsessed with the <strong>gap between data and meaning</strong></li>
-        <li>Why do smart systems miss what <em>actually</em> matters?</li>
-        <li>Building AI that interprets, not just processes</li>
-        <li>Fascinated by <strong>context</strong> — in decisions, in language, between people</li>
-        <li>Every pipeline is an experiment in that direction</li>
-      </ul>
-    </div>
-
-    <div class="info-card reveal">
-      <div class="ic-head"><div class="ic-icon">🛠️</div><span class="ic-title">Core Stack</span></div>
-      <div class="tag-grid">
-        <span class="tg">Python</span><span class="tg">SQL</span><span class="tg">PySpark</span><span class="tg">R</span>
-        <span class="tg">LangChain</span><span class="tg">Pinecone</span><span class="tg">Snowflake</span>
-        <span class="tg">Dagster</span><span class="tg">DBT</span><span class="tg">Streamlit</span>
-        <span class="tg">AWS</span><span class="tg">Azure</span><span class="tg">GCP</span><span class="tg">Databricks</span>
-        <span class="tg">Power BI</span><span class="tg">Tableau</span>
+      <div class="cta-row">
+        <a href="https://www.linkedin.com/in/p-brahma-teja/" target="_blank" class="btn btn-solid">DM Me →</a>
+        <a href="https://v0-sarth-ai.vercel.app/?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio&amp;fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnS7ojAb9Lty4s7Uhy7yi9LNX3E03mgbdDyK3HZMxCOhqT7gMLAvYSJSYk7H8_aem_ZyuRaEFuLIe9ub1xuZ_IJg"
+          target="_blank" class="btn btn-teal">SarthAI Demo ↗</a>
+        <a href="https://drive.google.com/file/d/YOUR_RESUME_ID/view" target="_blank" class="btn btn-ghost">↓ Resume</a>
       </div>
     </div>
 
-    <div class="info-card reveal">
-      <div class="ic-head"><div class="ic-icon">🎓</div><span class="ic-title">Certifications</span></div>
-      <div class="cert-row">
-        <div class="cert"><div class="cert-dot"></div>PCEP Certified Python Programmer</div>
-        <div class="cert"><div class="cert-dot"></div>PCAP Certified Associate Python Programmer</div>
-        <div class="cert"><div class="cert-dot"></div>MS Business Analytics (STEM) — Penn State 2023</div>
-        <div class="cert"><div class="cert-dot"></div>B.Tech Mechanical Engineering — KL University 2018</div>
-      </div>
+    <div class="stat-stack">
+      <div class="stat-card"><span class="sv">$10M+</span><span class="sl">Cost savings driven</span></div>
+      <div class="stat-card"><span class="sv">$120M</span><span class="sl">Revenue influenced</span></div>
+      <div class="stat-card"><span class="sv">5+ yrs</span><span class="sl">Enterprise AI/data</span></div>
+      <div class="stat-card"><span class="sv">3</span><span class="sl">Industries: auto · health · tech</span></div>
     </div>
+  </section>
 
-  </div>
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="sh reveal"><span class="stag">01 · About</span>
+      <h2 class="st">At a Glance</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="about-grid">
 
-  <div class="sh reveal" style="margin-top:60px"><span class="stag">01b · Philosophy</span><h2 class="st">What I Bring to the Table</h2><div class="sl2"></div></div>
-  <div class="vision-grid" style="margin-top:24px">
-    <div class="vision-list">
-      <div class="vision-item reveal">
-        <div class="vi-num">01</div>
+      <!-- SEEKING CARD — RECRUITER FIX #4 -->
+      <div class="seeking-card reveal">
         <div>
-          <div class="vi-title">Obsession with the "Why"</div>
-          <p style="font-size:12.5px;color:var(--m);line-height:1.5">I don’t just write code to deploy features; I engineer systems to solve fundamental human and operational frictions. I approach every technical architecture by first ruthlessly defining the core problem, ensuring that the technology serves a meaningful purpose rather than just acting as a novelty.</p>
+          <div class="sk-label">Roles I am uniquely wired for</div>
+          <div class="sk-items">
+            <span class="sk-item">Data Scientist &amp; AI Consultant</span>
+            <span class="sk-item">Generative AI Engineer</span>
+            <span class="sk-item">AI Product Manager</span>
+            <span class="sk-item">AI Project Manager</span>
+          </div>
         </div>
-      </div>
-      <div class="vision-item reveal">
-        <div class="vi-num">02</div>
+        <div class="sk-divider"></div>
         <div>
-          <div class="vi-title">Signal Over Noise (Deep Work)</div>
-          <p style="font-size:12.5px;color:var(--m);line-height:1.5">In an industry crowded with hype and superficial metrics, I value authenticity and deep, uninterrupted execution. I operate best when tackling complex, high-stakes problems that require intense focus and a clear, intentional approach.</p>
-        </div>
-      </div>
-    </div>
-    <div class="vision-list">
-      <div class="vision-item reveal">
-        <div class="vi-num">03</div>
-        <div>
-          <div class="vi-title">Extreme Ownership as a Forcing Function</div>
-          <p style="font-size:12.5px;color:var(--m);line-height:1.5">I view difficult challenges and high-pressure environments not as roadblocks, but as necessary forcing functions for growth. I consistently put myself in positions where I have to out-work my current capabilities to become worthy of the next tier of success.</p>
-        </div>
-      </div>
-      <div class="vision-item reveal">
-        <div class="vi-num">04</div>
-        <div>
-          <div class="vi-title">Translating Logic into Empathy</div>
-          <p style="font-size:12.5px;color:var(--m);line-height:1.5">My fundamental belief is that the best engineering bridges the gap between cold data and the messy reality of human behavior. I bring an empathy-driven mindset to data science, always designing backend logic with the end-user’s psychological reality at the forefront.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SARTHAI -->
-<section id="founder">
-  <div class="sh reveal"><span class="stag">02 · Founder</span><h2 class="st">SarthAI</h2><div class="sl2"></div></div>
-  <div class="founder-shell reveal">
-    <div class="ft-bar"></div>
-    <div class="founder-top">
-
-      <div class="founder-left">
-        <div class="f-badge">🚀 Founder · Lead Developer · Live Product</div>
-        <div class="f-h2">Relational<br><span>Intelligence.</span></div>
-        <div class="f-sub">Decoding the Context Gap in digital communication</div>
-
-        <div class="prob-block">
-          <div class="pb-label">The Problem</div>
-          <div class="kv-list">
-            <div class="kv"><span class="kv-k">Psychological</span><span class="kv-v">"Communication Latency" — emotional metadata is stripped from text, causing misunderstandings and relational friction in personal life.</span></div>
-            <div class="kv"><span class="kv-k">Data Level</span><span class="kv-v">Thousands of daily digital messages remain unstructured and unanalyzed, hiding toxic conflict loops and behavioral patterns.</span></div>
-          </div>
-        </div>
-
-        <div class="prob-block">
-          <div class="pb-label">The Solution</div>
-          <div class="kv-list">
-            <div class="kv"><span class="kv-k">Engine</span><span class="kv-v">LangChain + Pinecone — semantic memory &amp; intent analysis over chat histories.</span></div>
-            <div class="kv"><span class="kv-k">Method</span><span class="kv-v">Sentiment variance analysis &amp; relationship-specific personality modeling.</span></div>
-          </div>
-        </div>
-
-        <div class="prob-block">
-          <div class="pb-label">Unique Value</div>
-          <div class="kv-list">
-            <div class="kv"><span class="kv-k">Profiling</span><span class="kv-v">You portray a unique personality to each person. This tool dynamically creates a tailored profile specific to that exact relationship.</span></div>
-            <div class="kv"><span class="kv-k">Decoding</span><span class="kv-v">Separates what was said from what was meant, reducing defensive reactions and de-escalating arguments based on that unique dynamic.</span></div>
-            <div class="kv"><span class="kv-k">Coaching</span><span class="kv-v">Translates emotional metadata into objective insights to repair and strengthen interpersonal bonds.</span></div>
+          <div class="sk-label">Ideal environment</div>
+          <div class="sk-items">
+            <span class="sk-item"
+              style="background:var(--vd);border-color:rgba(124,111,224,.25);color:var(--vl);">High-impact
+              problems</span>
+            <span class="sk-item"
+              style="background:var(--vd);border-color:rgba(124,111,224,.25);color:var(--vl);">Fast-moving teams</span>
+            <span class="sk-item"
+              style="background:var(--vd);border-color:rgba(124,111,224,.25);color:var(--vl);">AI-first orgs</span>
           </div>
         </div>
       </div>
 
-      <div class="founder-right">
-        <div class="pb-label" style="margin-bottom:16px">Architecture Mindmap</div>
-        <!-- SARTHAI MINDMAP SVG -->
-        <svg viewBox="0 0 440 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:440px">
-          <defs>
-            <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-              <path d="M0,0 L0,6 L6,3 z" fill="rgba(124,111,224,.5)"/>
-            </marker>
-            <marker id="arr-t" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-              <path d="M0,0 L0,6 L6,3 z" fill="rgba(45,212,191,.5)"/>
-            </marker>
-          </defs>
+      <div class="icard reveal">
+        <div class="icard-head">
+          <div class="icard-icon">👤</div><span class="icard-title">Who I am</span>
+        </div>
+        <ul class="blist">
+          <li><strong>Data Scientist, AI Consultant &amp; Founder</strong> — Chicago area</li>
+          <li>MS Business Analytics (STEM) — <em>Penn State 2023</em></li>
+          <li>Currently: <strong>Kavi Global</strong> — enterprise AI &amp; data pipelines</li>
+          <li>Building: <strong>SarthAI</strong> — relational intelligence platform</li>
+          <li>Industries: <strong>Healthcare · Automotive · Tech · Policy</strong></li>
+        </ul>
+      </div>
 
-          <!-- CENTER (ENGINE) -->
-          <ellipse cx="220" cy="210" rx="74" ry="38" fill="rgba(124,111,224,.2)" stroke="#7C6FE0" stroke-width="1.5"/>
-          <text x="220" y="200" font-family="Sora,sans-serif" font-size="11" font-weight="700" fill="#A99EF0" text-anchor="middle">LLM ENGINE</text>
-          <text x="220" y="214" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">RAG + Tone Analysis</text>
-          <text x="220" y="226" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Profile Classification</text>
+      <div class="icard reveal">
+        <div class="icard-head">
+          <div class="icard-icon">💡</div><span class="icard-title">What drives me</span>
+        </div>
+        <ul class="blist">
+          <li>Obsessed with the <strong>gap between data and meaning</strong></li>
+          <li>Engineering AI that <strong>interprets</strong>, not just processes</li>
+          <li>Every model I train is an experiment in <strong>context</strong></li>
+          <li>Fascinated by <strong>human behavior × machine logic</strong></li>
+          <li>Signal over noise — deep work, not hype</li>
+        </ul>
+      </div>
 
-          <!-- ARROWS FROM LEFT TO CENTER -->
-          <line x1="110" y1="155" x2="152" y2="186" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
-          <line x1="110" y1="265" x2="152" y2="234" stroke="rgba(124,111,224,.4)" stroke-width="1" marker-end="url(#arr)"/>
+      <div class="icard reveal">
+        <div class="icard-head">
+          <div class="icard-icon">🛠️</div><span class="icard-title">Core Stack</span>
+        </div>
+        <div class="pill-wrap">
+          <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">PySpark</span><span
+            class="pill">Pandas</span>
+          <span class="pill">LangChain</span><span class="pill">LlamaIndex</span><span class="pill">Pinecone</span><span
+            class="pill">OpenAI</span>
+          <span class="pill">Snowflake</span><span class="pill">Databricks</span><span class="pill">AWS</span><span
+            class="pill">Azure</span>
+          <span class="pill">Jira</span><span class="pill">Confluence</span><span class="pill">Agile/Scrum</span>
+          <span class="pill">Power BI</span><span class="pill">Tableau</span>
+        </div>
+      </div>
 
-          <!-- ARROWS FROM CENTER TO RIGHT -->
-          <line x1="288" y1="185" x2="330" y2="145" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
-          <line x1="294" y1="210" x2="330" y2="210" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
-          <line x1="288" y1="235" x2="330" y2="275" stroke="rgba(45,212,191,.4)" stroke-width="1" marker-end="url(#arr-t)"/>
-
-          <!-- LEFT: USER INPUT -->
-          <rect x="20" y="130" width="90" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
-          <text x="65" y="150" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">USER INPUT</text>
-          <text x="65" y="162" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Chat History +</text>
-          <text x="65" y="172" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">MBTI / Style</text>
-
-          <!-- LEFT: KNOWLEDGE BASE -->
-          <rect x="20" y="240" width="90" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
-          <text x="65" y="260" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">KNOWLEDGE</text>
-          <text x="65" y="272" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Cultural Rules</text>
-          <text x="65" y="282" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Classifiers</text>
-
-          <!-- RIGHT: OUTPUT 1 -->
-          <rect x="330" y="120" width="90" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
-          <text x="375" y="140" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">RECOMMEND</text>
-          <text x="375" y="152" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Alt Phrasing</text>
-          <text x="375" y="162" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Tone Adjust</text>
-
-          <!-- RIGHT: OUTPUT 2 -->
-          <rect x="330" y="185" width="90" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
-          <text x="375" y="205" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">INSIGHTS</text>
-          <text x="375" y="217" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Conflict Alerts</text>
-          <text x="375" y="227" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Tone Trends</text>
-
-          <!-- RIGHT: OUTPUT 3 -->
-          <rect x="330" y="250" width="90" height="50" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.25)" stroke-width="1"/>
-          <text x="375" y="270" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">RESOLUTION</text>
-          <text x="375" y="282" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">De-escalation</text>
-          <text x="375" y="292" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Strategies</text>
-
-          <!-- TOP: GOAL -->
-          <rect x="120" y="50" width="200" height="40" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(232,121,160,.3)" stroke-width="1"/>
-          <text x="220" y="68" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#E879A0" text-anchor="middle">ARCHITECTURAL FLOW</text>
-          <text x="220" y="81" font-family="Space Grotesk,sans-serif" font-size="8.5" fill="#7A84A0" text-anchor="middle">Inputs → RAG Engine → Relational Output</text>
-          
-          <!-- BOTTOM: STATS -->
-          <text x="220" y="400" font-family="Space Grotesk,sans-serif" font-size="9" fill="rgba(124,111,224,.5)" text-anchor="middle">Relationship-Specific Context · Actionable Insights · AI Mediation</text>
-        </svg>
+      <div class="icard reveal">
+        <div class="icard-head">
+          <div class="icard-icon">🎓</div><span class="icard-title">Education &amp; Certs</span>
+        </div>
+        <div class="cert-list">
+          <div class="cert">
+            <div class="cdot"></div>MS Business Analytics (STEM) — Penn State, 2023
+          </div>
+          <div class="cert">
+            <div class="cdot"></div>B.Tech Mechanical Eng — KL University, 2018
+          </div>
+          <div class="cert">
+            <div class="cdot" style="background:var(--t)"></div>PCAP Certified Associate Python Programmer
+          </div>
+          <div class="cert">
+            <div class="cdot" style="background:var(--t)"></div>PCEP Certified Python Programmer
+          </div>
+        </div>
       </div>
 
     </div>
-    <div class="metrics-strip">
-      <div class="ms-item"><div class="ms-val">8,323</div><div class="ms-lbl">Messages analyzed</div></div>
-      <div class="ms-item"><div class="ms-val">85%+</div><div class="ms-lbl">Retrieval accuracy</div></div>
-      <div class="ms-item"><div class="ms-val">94%</div><div class="ms-lbl">Cortex search accuracy</div></div>
-      <div class="ms-item"><div class="ms-val">Private Beta</div><div class="ms-lbl">Active Pipeline</div></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="sh reveal"><span class="stag">03 · Experience</span><h2 class="st">Work History</h2><div class="sl2"></div></div>
-  <div class="exp-list">
-
-    <div class="exp-card reveal">
-      <div class="exp-h" onclick="toggleE(this)">
-        <div class="exp-dot cur"></div>
-        <div class="exp-info"><div class="exp-role">Consultant — Data Science</div><div class="exp-co">Kavi Global · Illinois, USA</div></div>
-        <span class="exp-date">Sept 2024 – Present</span><span class="exp-chev">▾</span>
+  <!-- ═══ SARTHAI ═══ -->
+  <section id="founder" style="position: relative; z-index: 1; overflow: hidden;">
+    <!-- Purple and Pink Smoke Effect -->
+    <div style="position: absolute; inset: 0; z-index: -2; pointer-events: none;">
+      <div
+        style="position: absolute; top: -10%; left: -10%; width: 60%; height: 60%; background: radial-gradient(circle, rgba(124,111,224,0.12) 0%, transparent 70%); filter: blur(60px);">
       </div>
-      <div class="exp-body"><div class="exp-inner">
-        <div class="two-col">
-          <div>
-            <div class="exp-col-title">What I built</div>
+      <div
+        style="position: absolute; bottom: -10%; right: -10%; width: 60%; height: 60%; background: radial-gradient(circle, rgba(244,114,182,0.1) 0%, transparent 70%); filter: blur(60px);">
+      </div>
+      <div
+        style="position: absolute; top: 20%; left: 30%; width: 50%; height: 50%; background: radial-gradient(circle, rgba(169,158,240,0.08) 0%, transparent 70%); filter: blur(60px);">
+      </div>
+    </div>
+    <!-- SarthAI Backdrop Image (Logo) -->
+    <div
+      style="position: absolute; inset: 0; background: url('Logo.png') center/cover no-repeat; opacity: 0.2; z-index: -1; pointer-events: none; mix-blend-mode: screen;">
+    </div>
+    <div class="sh reveal"><span class="stag">02 · Founder</span>
+      <h2 class="st">SarthAI</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="f-shell reveal">
+      <div class="f-topbar"></div>
+      <div class="f-grid">
+        <div class="f-left">
+          <div class="f-badge">🚀 Founder · Lead Dev · Private Beta</div>
+          <div class="f-h">Relational<br><span>Intelligence.</span></div>
+          <div class="f-sub"><a
+              href="https://v0-sarth-ai.vercel.app/?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio&amp;fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnS7ojAb9Lty4s7Uhy7yi9LNX3E03mgbdDyK3HZMxCOhqT7gMLAvYSJSYk7H8_aem_ZyuRaEFuLIe9ub1xuZ_IJg"
+              target="_blank" style="color:inherit; text-decoration:underline;">sarthai.app</a> · Decoding the context
+            gap in digital communication</div>
+
+          <div style="margin-top: 20px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <span
+              style="font-family:'DM Mono', monospace; font-size:11px; color:#6B7594; text-transform:uppercase; letter-spacing:0.05em; margin-right:4px;">Follow
+              the Journey:</span>
+            <a href="https://www.instagram.com/sarth__ai/" target="_blank"
+              style="padding:6px 14px; border-radius:99px; background:rgba(244,114,182,0.08); border:1px solid rgba(244,114,182,0.3); color:#F472B6; font-size:12px; font-weight:500; text-decoration:none;">Instagram
+              ↗</a>
+            <a href="https://www.linkedin.com/company/sarthai/?viewAsMember=true" target="_blank"
+              style="padding:6px 14px; border-radius:99px; background:rgba(124,111,224,0.1); border:1px solid rgba(124,111,224,0.3); color:#A99EF0; font-size:12px; font-weight:500; text-decoration:none;">LinkedIn
+              ↗</a>
+          </div>
+
+          <div
+            style="margin:28px 0; padding:24px; background:linear-gradient(145deg, rgba(12,16,32,0.4), rgba(18,24,43,0.4)); border-radius:12px; border:1px solid rgba(124,111,224,0.4); border-left:4px solid #7C6FE0; box-shadow:0 8px 24px rgba(0,0,0,0.25); backdrop-filter: blur(8px);">
+            <div style="margin-bottom:20px;">
+              <div
+                style="font-family:'DM Mono', monospace; font-size:11px; color:#A99EF0; letter-spacing:2px; margin-bottom:8px; font-weight:600; display:flex; align-items:center; gap:6px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                MISSION
+              </div>
+              <div style="font-size:16px; color:#F8FAFC; line-height:1.6; font-weight:400;">To <strong
+                  style="color:#FFF;">strengthen and nurture our most valued relationships</strong> by eliminating the
+                communication gaps and misunderstandings that cause relational friction.</div>
+            </div>
+            <div>
+              <div
+                style="font-family:'DM Mono', monospace; font-size:11px; color:#2DD4BF; letter-spacing:2px; margin-bottom:8px; font-weight:600; display:flex; align-items:center; gap:6px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                VISION
+              </div>
+              <div style="font-size:16px; color:#F8FAFC; line-height:1.6; font-weight:400;">A world where every person
+                is supported by a <strong style="color:#FFF;">secure, deeply trustworthy core circle</strong> of five
+                close relationships.</div>
+            </div>
+          </div>
+
+          <div class="kv-section"
+            style="margin-bottom: 32px; padding: 20px 24px; background: rgba(12, 16, 32, 0.15); border-radius: 8px; border-left: 2px solid rgba(124, 111, 224, 0.5); backdrop-filter: blur(8px);">
+            <div class="kv-label" style="color: #A99EF0; margin-bottom: 8px;">The Inspiration — Genesis</div>
+            <p style="color:#CBD5E1; line-height:1.7; font-size:14.5px; margin-top:0; margin-bottom:24px;">Growing up, I
+              was surrounded by a wide, deeply connected circle of close friends. But as the years passed, I watched
+              that number quietly and unknowingly dwindle. I realized that people rarely make a conscious choice to walk
+              away; instead, they slowly drift apart through the silent friction and accumulated misunderstandings of
+              modern digital communication.</p>
+
+            <div class="kv-label" style="color: #A99EF0; margin-bottom: 8px;">The Inspiration — The Shift</div>
+            <p style="color:#CBD5E1; line-height:1.7; font-size:14.5px; margin-top:0; margin-bottom:0;">I reached a
+              point where I refused to let my remaining core circle shrink any further. SarthAI was born from a deeply
+              personal need to intercept that relational decay. By bridging the 'Context Gap' and translating true
+              intent, it is built to protect the connections we value most, ensuring that a simple misunderstanding
+              never costs us a meaningful relationship again.</p>
+          </div>
+
+          <div class="kv-section" style="background: rgba(12, 16, 32, 0.15); backdrop-filter: blur(8px);">
+            <div class="kv-label">The Problem</div>
+            <div class="kv-list">
+              <div class="kv"><span class="kv-k">Gap</span><span class="kv-v">Emotional metadata stripped from text →
+                  misunderstanding &amp; friction</span></div>
+              <div class="kv"><span class="kv-k">Impact</span><span class="kv-v">Miscommunication quietly erodes trust
+                  in our most valued connections</span></div>
+              <div class="kv"><span class="kv-k">Insight</span><span class="kv-v">You behave differently with each
+                  person — no tool models that</span></div>
+            </div>
+          </div>
+
+          <div class="kv-section" style="background: rgba(12, 16, 32, 0.15); backdrop-filter: blur(8px);">
+            <div class="kv-label">The Solution</div>
+            <div class="kv-list">
+              <div class="kv"><span class="kv-k">Engine</span><span class="kv-v">LangChain + Pinecone —
+                  relationship-specific semantic memory</span></div>
+              <div class="kv"><span class="kv-k">Method</span><span class="kv-v">Sentiment variance + personality
+                  profiling per relationship</span></div>
+              <div class="kv"><span class="kv-k">Output</span><span class="kv-v">Real-time intent translation +
+                  de-escalation coaching</span></div>
+            </div>
+          </div>
+
+          <!-- INVESTOR FIX: Monetization thesis -->
+          <div class="kv-section" style="background: rgba(12, 16, 32, 0.15); backdrop-filter: blur(8px);">
+            <div class="kv-label">Business Model</div>
+            <div class="kv-list">
+              <div class="kv"><span class="kv-k">B2C</span><span class="kv-v">$9.99/mo — individuals &amp; couples
+                  (freemium)</span></div>
+              <div class="kv"><span class="kv-k">Focus</span><span class="kv-v">Nurturing and maintaining trusty, close
+                  relationships</span></div>
+              <div class="kv"><span class="kv-k">Market</span><span class="kv-v">Relational well-being &amp; Personal AI
+                  — $25B+
+                  TAM</span></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="f-right">
+          <div class="kv-label" style="margin-bottom:14px">Architecture — How It Works</div>
+
+          <!-- IMPROVED MINDMAP -->
+          <svg viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+            <defs>
+              <marker id="av" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"
+                markerUnits="userSpaceOnUse">
+                <polygon points="0 0, 6 3, 0 6" fill="rgba(124,111,224,.55)" />
+              </marker>
+              <marker id="at" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"
+                markerUnits="userSpaceOnUse">
+                <polygon points="0 0, 6 3, 0 6" fill="rgba(45,212,191,.55)" />
+              </marker>
+              <marker id="ap" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"
+                markerUnits="userSpaceOnUse">
+                <polygon points="0 0, 6 3, 0 6" fill="rgba(244,114,182,.55)" />
+              </marker>
+            </defs>
+
+            <!-- ROW 1: INPUTS -->
+            <text x="200" y="18" font-family="DM Mono,monospace" font-size="9" fill="rgba(107,117,148,.8)"
+              text-anchor="middle" letter-spacing="3">INPUTS</text>
+
+            <rect x="70" y="26" width="260" height="40" rx="7" fill="rgba(12,16,32,.95)" stroke="rgba(124,111,224,.3)"
+              stroke-width="1" />
+            <text x="200" y="42" font-family="DM Mono,monospace" font-size="8.5" font-weight="500" fill="#A99EF0"
+              text-anchor="middle">CHAT HISTORY &amp; KNOWLEDGE BASE</text>
+            <text x="200" y="55" font-family="DM Mono,monospace" font-size="7.5" fill="#6B7594"
+              text-anchor="middle">Cultural Rules · Psychology · Context</text>
+
+            <!-- ARROW DOWN TO CLASSIFIER -->
+            <line x1="200" y1="66" x2="200" y2="98" stroke="rgba(124,111,224,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#av)" class="flow-line" />
+
+            <!-- ROW 2: CLASSIFIER -->
+            <rect x="80" y="100" width="240" height="42" rx="7" fill="rgba(12,16,32,.95)" stroke="rgba(45,212,191,.3)"
+              stroke-width="1" />
+            <text x="200" y="116" font-family="DM Mono,monospace" font-size="8.5" font-weight="500" fill="#2DD4BF"
+              text-anchor="middle">PERSONALITY CLASSIFIER</text>
+            <text x="200" y="129" font-family="DM Mono,monospace" font-size="7.5" fill="#6B7594"
+              text-anchor="middle">Profiles both individuals' specific traits</text>
+
+            <!-- ARROW DOWN TO LLM -->
+            <line x1="200" y1="142" x2="200" y2="172" stroke="rgba(45,212,191,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#at)" class="flow-line" />
+
+            <!-- ROW 3: ENGINE -->
+            <ellipse cx="200" cy="210" rx="110" ry="36" fill="rgba(124,111,224,.14)" stroke="#7C6FE0"
+              stroke-width="1.5" />
+            <text x="200" y="200" font-family="Sora,sans-serif" font-size="11" font-weight="700" fill="#B4ABFF"
+              text-anchor="middle">LLM MODULE</text>
+            <text x="200" y="213" font-family="DM Mono,monospace" font-size="8" fill="#6B7594"
+              text-anchor="middle">LangChain · Pinecone</text>
+            <text x="200" y="225" font-family="DM Mono,monospace" font-size="8" fill="#6B7594"
+              text-anchor="middle">Contextual Intent Translation</text>
+
+            <!-- ARROWS DOWN TO OUTPUTS -->
+            <line x1="200" y1="246" x2="200" y2="305" stroke="rgba(244,114,182,.4)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#ap)" class="flow-line" />
+            <line x1="200" y1="246" x2="75" y2="305" stroke="rgba(244,114,182,.4)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#ap)" class="flow-line" />
+            <line x1="200" y1="246" x2="325" y2="305" stroke="rgba(244,114,182,.4)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#ap)" class="flow-line" />
+
+            <!-- ROW 4: OUTPUTS -->
+            <text x="200" y="294" font-family="DM Mono,monospace" font-size="9" fill="rgba(107,117,148,.8)"
+              text-anchor="middle" letter-spacing="3">OUTPUTS</text>
+
+            <rect x="20" y="308" width="110" height="40" rx="7" fill="rgba(244,114,182,.07)"
+              stroke="rgba(244,114,182,.25)" stroke-width="1" />
+            <text x="75" y="324" font-family="DM Mono,monospace" font-size="8.5" font-weight="500" fill="#F472B6"
+              text-anchor="middle">REPHRASE</text>
+            <text x="75" y="337" font-family="DM Mono,monospace" font-size="7.5" fill="#6B7594" text-anchor="middle">Alt
+              phrasing · Tone fix</text>
+
+            <rect x="145" y="308" width="110" height="40" rx="7" fill="rgba(244,114,182,.07)"
+              stroke="rgba(244,114,182,.25)" stroke-width="1" />
+            <text x="200" y="324" font-family="DM Mono,monospace" font-size="8.5" font-weight="500" fill="#F472B6"
+              text-anchor="middle">INSIGHTS</text>
+            <text x="200" y="337" font-family="DM Mono,monospace" font-size="7.5" fill="#6B7594"
+              text-anchor="middle">Conflict alerts · Trends</text>
+
+            <rect x="270" y="308" width="110" height="40" rx="7" fill="rgba(244,114,182,.07)"
+              stroke="rgba(244,114,182,.25)" stroke-width="1" />
+            <text x="325" y="324" font-family="DM Mono,monospace" font-size="8.5" font-weight="500" fill="#F472B6"
+              text-anchor="middle">COACHING</text>
+            <text x="325" y="337" font-family="DM Mono,monospace" font-size="7.5" fill="#6B7594"
+              text-anchor="middle">De-escalation scripts</text>
+
+            <!-- BOTTOM LABEL -->
+            <text x="200" y="384" font-family="DM Mono,monospace" font-size="8" fill="rgba(124,111,224,.4)"
+              text-anchor="middle">Efficiency-first → Accuracy-first communication</text>
+          </svg>
+
+          <!-- INVESTOR FIX: Team/stage -->
+          <div
+            style="margin-top:16px;padding:14px;background:rgba(12,16,32,0.15);backdrop-filter:blur(8px);border-radius:var(--rs);border:1px solid var(--br2)">
+            <div class="kv-label" style="margin-bottom:8px">Stage &amp; Team</div>
             <ul class="blist">
-              <li>Scalable <strong>ETL pipelines</strong> — Dagster + PostgreSQL</li>
-              <li><strong>Resource allocation model</strong> for phlebotomist staffing</li>
-              <li><strong>LLM chatbot</strong> — 1,200+ PDFs + 1,500+ Snowflake tables</li>
-              <li><strong>Cortex Analyst/Search</strong> — YAML config refinement</li>
-              <li><strong>OCR compliance tool</strong> — pdf2image, OpenCV, Tesseract + RAG</li>
-              <li>SLMs used: <strong>Phi-4, Gemma, Mistral</strong></li>
+              <li>Stage: <strong>Private Beta</strong> — active users testing</li>
+              <li>Founder: <strong>Solo</strong> — actively building founding team</li>
+              <li>Stack: LangChain · Pinecone · Llama · Snowflake · Streamlit</li>
+              <li>Open to: <strong>angel investment · technical co-founder</strong></li>
             </ul>
           </div>
+
+          <!-- PERFORMANCE METRICS -->
+          <div style="margin-top:20px; display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <div
+              style="padding:14px; background:rgba(12,16,32,0.15); backdrop-filter: blur(8px); border-radius:8px; border:1px solid rgba(124,111,224,0.2);">
+              <div style="font-size:22px; font-weight:700; color:#A99EF0; margin-bottom:4px;">8,323</div>
+              <div style="font-size:11px; color:#94A3B8; text-transform:uppercase; letter-spacing:0.5px;">Messages
+                Analyzed</div>
+            </div>
+            <div
+              style="padding:14px; background:rgba(12,16,32,0.15); backdrop-filter: blur(8px); border-radius:8px; border:1px solid rgba(45,212,191,0.2);">
+              <div style="font-size:22px; font-weight:700; color:#2DD4BF; margin-bottom:4px;">85%+</div>
+              <div style="font-size:11px; color:#94A3B8; text-transform:uppercase; letter-spacing:0.5px;">Retrieval
+                Accuracy</div>
+            </div>
+            <div
+              style="padding:14px; background:rgba(12,16,32,0.15); backdrop-filter: blur(8px); border-radius:8px; border:1px solid rgba(45,212,191,0.2);">
+              <div style="font-size:22px; font-weight:700; color:#2DD4BF; margin-bottom:4px;">94%</div>
+              <div style="font-size:11px; color:#94A3B8; text-transform:uppercase; letter-spacing:0.5px;">Chat Accuracy
+              </div>
+            </div>
+            <div
+              style="padding:14px; background:rgba(12,16,32,0.15); backdrop-filter: blur(8px); border-radius:8px; border:1px solid rgba(244,114,182,0.2);">
+              <div style="font-size:22px; font-weight:700; color:#F472B6; margin-bottom:4px;">$25B+</div>
+              <div style="font-size:11px; color:#94A3B8; text-transform:uppercase; letter-spacing:0.5px;">TAM ·
+                Relational Well-being</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience">
+    <div class="sh reveal"><span class="stag">03 · Experience</span>
+      <h2 class="st">Work History</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="exp-list">
+
+      <div class="exp-card reveal">
+        <div class="exp-h" onclick="toggleE(this)">
+          <div class="exp-dot cur"></div>
+          <div class="exp-info">
+            <div class="exp-role">Consultant — Data Science</div>
+            <div class="exp-co">Kavi Global · Illinois, USA</div>
+          </div>
+          <span class="exp-date">Sept 2024 – Present</span><span class="exp-chev">▾</span>
+        </div>
+        <div class="exp-body">
+          <div class="exp-inner">
+            <div class="two-col">
+              <div>
+                <div class="col-lbl">What I Built</div>
+                <ul class="blist">
+                  <li>Scalable <strong>ETL pipelines</strong> — Dagster + PostgreSQL</li>
+                  <li><strong>Staffing optimization model</strong> — NeuralProphet + Gurobi</li>
+                  <li><strong>LLM chatbot</strong> — 1,200+ PDFs + 1,500+ Snowflake tables</li>
+                  <li><strong>Cortex Analyst/Search</strong> — YAML refinement</li>
+                  <li><strong>OCR compliance tool</strong> — pdf2image + OpenCV + RAG</li>
+                  <li>SLMs: <strong>Phi-4 · Gemma · Mistral</strong></li>
+                </ul>
+              </div>
+              <div>
+                <div class="col-lbl">Results</div>
+                <ul class="blist">
+                  <li><strong>~$10M</strong> projected annual savings</li>
+                  <li><strong>~30%</strong> coverage consistency gain</li>
+                  <li><strong>85%+</strong> chatbot retrieval accuracy</li>
+                  <li>Cortex accuracy: <strong>60% → 94%</strong></li>
+                  <li>Validation accuracy: <strong>70% → 95%+</strong></li>
+                  <li>Review time cut by <strong>80%</strong></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tchips">
+              <span class="tc">NeuralProphet</span><span class="tc">Gurobi</span><span class="tc">OR-Tools</span>
+              <span class="tc">Llama</span><span class="tc">RAG</span><span class="tc">Snowflake</span><span
+                class="tc">Dagster</span>
+              <span class="tc-v">$10M savings</span><span class="tc-v">94% accuracy</span><span class="tc-v">80% faster
+                review</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-h" onclick="toggleE(this)">
+          <div class="exp-dot"></div>
+          <div class="exp-info">
+            <div class="exp-role">Data Analyst (Contract)</div>
+            <div class="exp-co">Community Dreams Foundation · Illinois</div>
+          </div>
+          <span class="exp-date">Apr – Sept 2024</span><span class="exp-chev">▾</span>
+        </div>
+        <div class="exp-body">
+          <div class="exp-inner">
+            <div class="two-col">
+              <div>
+                <div class="col-lbl">What I Built</div>
+                <ul class="blist">
+                  <li><strong>Azure Data Factory</strong> ETL — survey + social media</li>
+                  <li>Real-time <strong>Power BI dashboard</strong> — KPI monitoring</li>
+                </ul>
+              </div>
+              <div>
+                <div class="col-lbl">Results</div>
+                <ul class="blist">
+                  <li><strong>30%</strong> improvement in learning outcomes</li>
+                  <li>Stakeholder KPI visibility — real time</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tchips"><span class="tc">Azure Data Factory</span><span class="tc">Power BI</span><span
+                class="tc-v">30% outcome lift</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-h" onclick="toggleE(this)">
+          <div class="exp-dot"></div>
+          <div class="exp-info">
+            <div class="exp-role">Data Science Intern</div>
+            <div class="exp-co">Evidence-to-Impact Collaborative · Penn State</div>
+          </div>
+          <span class="exp-date">Sept 2023 – Mar 2024</span><span class="exp-chev">▾</span>
+        </div>
+        <div class="exp-body">
+          <div class="exp-inner">
+            <div class="two-col">
+              <div>
+                <div class="col-lbl">What I Built</div>
+                <ul class="blist">
+                  <li>Data standardization + profiling — <strong>Azure SQL</strong></li>
+                  <li><strong>GPT-3.5 turbo chatbot</strong> — Azure OpenAI</li>
+                  <li>Policy cost-benefit data models</li>
+                </ul>
+              </div>
+              <div>
+                <div class="col-lbl">Results</div>
+                <ul class="blist">
+                  <li>Data accuracy <strong>+27%</strong></li>
+                  <li><strong>~100 hrs</strong> saved in data cleaning</li>
+                  <li>Policy search time cut <strong>60%</strong></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tchips"><span class="tc">GPT-3.5</span><span class="tc">Azure SQL</span><span class="tc">Azure
+                OpenAI</span><span class="tc-v">60% faster search</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-h" onclick="toggleE(this)">
+          <div class="exp-dot"></div>
+          <div class="exp-info">
+            <div class="exp-role">Business Analyst</div>
+            <div class="exp-co">Hyundai Motors · Telangana, India</div>
+          </div>
+          <span class="exp-date">Aug 2018 – Jul 2022</span><span class="exp-chev">▾</span>
+        </div>
+        <div class="exp-body">
+          <div class="exp-inner">
+            <div class="two-col">
+              <div>
+                <div class="col-lbl">What I Built</div>
+                <ul class="blist">
+                  <li><strong>Customer segmentation</strong> — latent class analysis</li>
+                  <li><strong>Micro-SUV demand model</strong> — SQL + Power BI</li>
+                  <li>20-year road accident data analysis</li>
+                  <li>Monthly sales pipeline — <strong>600K+ records</strong></li>
+                  <li>Market trend predictive models</li>
+                </ul>
+              </div>
+              <div>
+                <div class="col-lbl">Results</div>
+                <ul class="blist">
+                  <li>Launch: <strong>100K bookings</strong> + <strong>$120M revenue</strong> in 5 months</li>
+                  <li>CSAT: <strong>3.5 → 4.2</strong></li>
+                  <li>Repeat customers: <strong>+25%</strong></li>
+                  <li>Conversion rate: <strong>15% → 18%</strong></li>
+                  <li><strong>300 hrs/yr</strong> reporting savings</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tchips">
+              <span class="tc">SQL</span><span class="tc">Power BI</span><span class="tc">Advanced Excel</span>
+              <span class="tc-v">$120M revenue</span><span class="tc-v">100K bookings</span><span class="tc-v">300 hrs
+                saved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills">
+    <div class="sh reveal"><span class="stag">04 · Skills</span>
+      <h2 class="st">Technical Stack</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="sk reveal">
+        <div class="sk-head">
+          <div class="sk-icon">🧠</div><span class="sk-title">AI &amp; Machine Learning</span>
+        </div>
+        <div class="pill-wrap">
+          <span class="pill">Applied NLP</span><span class="pill">LLM Orchestration</span><span class="pill">RAG</span>
+          <span class="pill">Prompt Engineering</span><span class="pill">Agentic AI</span><span
+            class="pill">HuggingFace</span>
+          <span class="pill">TensorFlow / PyTorch</span><span class="pill">XGBoost</span><span class="pill">Predictive
+            Modeling</span>
+          <span class="pill">A/B Testing</span><span class="pill">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="sk reveal">
+        <div class="sk-head">
+          <div class="sk-icon">🎯</div><span class="sk-title">Product &amp; Project Management</span>
+        </div>
+        <div class="pill-wrap">
+          <span class="pill">Product Strategy</span><span class="pill">Agile / Scrum</span><span
+            class="pill">Roadmapping</span>
+          <span class="pill">Stakeholder Alignment</span><span class="pill">KPIs &amp; OKRs</span><span
+            class="pill">Jira</span>
+          <span class="pill">Confluence</span><span class="pill">Notion</span><span class="pill">A/B Testing
+            Strategy</span>
+        </div>
+      </div>
+      <div class="sk reveal">
+        <div class="sk-head">
+          <div class="sk-icon">🔗</div><span class="sk-title">Frameworks &amp; Infrastructure</span>
+        </div>
+        <div class="pill-wrap">
+          <span class="pill">LangChain</span><span class="pill">LlamaIndex</span><span class="pill">Pinecone / Vector
+            DBs</span>
+          <span class="pill">Snowflake</span><span class="pill">Databricks</span><span class="pill">AWS / Azure /
+            GCP</span>
+          <span class="pill">Dagster / Airflow</span><span class="pill">DBT</span><span class="pill">Docker</span>
+        </div>
+      </div>
+      <div class="sk reveal">
+        <div class="sk-head">
+          <div class="sk-icon">📊</div><span class="sk-title">Languages &amp; Analytics</span>
+        </div>
+        <div class="pill-wrap">
+          <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">R</span>
+          <span class="pill">Pandas / NumPy</span><span class="pill">PySpark</span><span class="pill">Power BI</span>
+          <span class="pill">Tableau</span><span class="pill">Looker</span><span class="pill">Data Storytelling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CURIOSITY ═══ -->
+  <section id="curiosity">
+    <div class="sh reveal"><span class="stag">05 · Curiosity</span>
+      <h2 class="st">What I'm Exploring</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="curiosity-grid">
+      <div class="cur-list">
+        <div class="cur-item reveal">
+          <div class="ci-num">01</div>
           <div>
-            <div class="exp-col-title">Results</div>
-            <ul class="blist">
-              <li><strong>~$10M</strong> projected annual savings</li>
-              <li><strong>~30%</strong> better coverage consistency</li>
-              <li><strong>85%+</strong> chatbot retrieval accuracy</li>
-              <li>Cortex accuracy: <strong>60% → 94%</strong></li>
-              <li>Validation accuracy: <strong>70% → 95%+</strong></li>
-              <li>Review time cut by <strong>80%</strong></li>
+            <div class="ci-title">Relational AI</div>
+            <ul class="ci-pts">
+              <li>Can LLMs understand <em>intent</em>, not just words?</li>
+              <li>Emotional metadata reconstruction in text</li>
+              <li>Context gap: sender meaning ≠ receiver interpretation</li>
             </ul>
           </div>
         </div>
-        <div class="chips">
-          <span class="chip">NeuralProphet</span><span class="chip">Gurobi</span><span class="chip">OR-Tools</span>
-          <span class="chip">Llama</span><span class="chip">RAG</span><span class="chip">Snowflake</span>
-          <span class="chip-v">$10M savings</span><span class="chip-v">94% accuracy</span>
-        </div>
-      </div></div>
-    </div>
-
-    <div class="exp-card reveal">
-      <div class="exp-h" onclick="toggleE(this)">
-        <div class="exp-dot"></div>
-        <div class="exp-info"><div class="exp-role">Data Analyst (Contract)</div><div class="exp-co">Community Dreams Foundation · Illinois</div></div>
-        <span class="exp-date">Apr – Sept 2024</span><span class="exp-chev">▾</span>
-      </div>
-      <div class="exp-body"><div class="exp-inner">
-        <div class="two-col">
+        <div class="cur-item reveal">
+          <div class="ci-num">02</div>
           <div>
-            <div class="exp-col-title">What I built</div>
-            <ul class="blist">
-              <li><strong>Azure Data Factory</strong> ETL — survey + social media data</li>
-              <li>Real-time <strong>Power BI dashboard</strong> — KPI monitoring</li>
-            </ul>
-          </div>
-          <div>
-            <div class="exp-col-title">Results</div>
-            <ul class="blist">
-              <li><strong>30%</strong> improvement in learning outcomes</li>
-              <li>Improved stakeholder KPI visibility</li>
+            <div class="ci-title">Optimization Under Constraint</div>
+            <ul class="ci-pts">
+              <li>Resource allocation at scale — OR-Tools, Gurobi</li>
+              <li>Healthcare workforce scheduling models</li>
+              <li>NLP + operations research convergence</li>
             </ul>
           </div>
         </div>
-        <div class="chips"><span class="chip">Azure Data Factory</span><span class="chip">Power BI</span><span class="chip-v">30% outcome lift</span></div>
-      </div></div>
-    </div>
-
-    <div class="exp-card reveal">
-      <div class="exp-h" onclick="toggleE(this)">
-        <div class="exp-dot"></div>
-        <div class="exp-info"><div class="exp-role">Data Science Intern</div><div class="exp-co">Evidence-to-Impact Collaborative · Penn State</div></div>
-        <span class="exp-date">Sept 2023 – Mar 2024</span><span class="exp-chev">▾</span>
-      </div>
-      <div class="exp-body"><div class="exp-inner">
-        <div class="two-col">
+        <div class="cur-item reveal">
+          <div class="ci-num">03</div>
           <div>
-            <div class="exp-col-title">What I built</div>
-            <ul class="blist">
-              <li>Data standardization + profiling — <strong>Azure SQL</strong></li>
-              <li><strong>GPT-3.5 turbo chatbot</strong> on Azure OpenAI Service</li>
-              <li>Policy cost-benefit data models</li>
-            </ul>
-          </div>
-          <div>
-            <div class="exp-col-title">Results</div>
-            <ul class="blist">
-              <li>Data accuracy <strong>+27%</strong></li>
-              <li><strong>~100 hrs</strong> saved in data cleaning</li>
-              <li>Policy search time cut by <strong>60%</strong></li>
+            <div class="ci-title">Small Language Models</div>
+            <ul class="ci-pts">
+              <li>Phi-4, Gemma, Mistral for edge/enterprise</li>
+              <li>Accuracy vs. compute in specialized domains</li>
+              <li>RAG + SLMs — better than GPT-4 for niche tasks?</li>
             </ul>
           </div>
         </div>
-        <div class="chips"><span class="chip">GPT-3.5</span><span class="chip">Azure SQL</span><span class="chip-v">60% faster search</span></div>
-      </div></div>
-    </div>
-
-    <div class="exp-card reveal">
-      <div class="exp-h" onclick="toggleE(this)">
-        <div class="exp-dot"></div>
-        <div class="exp-info"><div class="exp-role">Business Analyst</div><div class="exp-co">Hyundai Motors · Telangana, India</div></div>
-        <span class="exp-date">Aug 2018 – Jul 2022</span><span class="exp-chev">▾</span>
-      </div>
-      <div class="exp-body"><div class="exp-inner">
-        <div class="two-col">
+        <div class="cur-item reveal">
+          <div class="ci-num">04</div>
           <div>
-            <div class="exp-col-title">What I built</div>
-            <ul class="blist">
-              <li><strong>Customer segmentation</strong> — latent class analysis</li>
-              <li><strong>Micro-SUV demand analysis</strong> — SQL + Power BI</li>
-              <li>Road accident data analysis — 20 years of data</li>
-              <li>Monthly sales reporting — 600K+ records</li>
-              <li>Market trend predictive models</li>
-            </ul>
-          </div>
-          <div>
-            <div class="exp-col-title">Results</div>
-            <ul class="blist">
-              <li>Product launch: <strong>100K bookings</strong>, <strong>$120M revenue</strong> in 5 months</li>
-              <li>CSAT: <strong>3.5 → 4.2</strong></li>
-              <li>Repeat customers: <strong>+25%</strong></li>
-              <li>Conversion rate: <strong>15% → 18%</strong></li>
-              <li><strong>~300 hrs/yr</strong> saved in reporting</li>
+            <div class="ci-title">Human × Machine Logic</div>
+            <ul class="ci-pts">
+              <li>Where does data end and behavior begin?</li>
+              <li>Psychology-informed system design</li>
+              <li>Empathy as a feature, not an afterthought</li>
             </ul>
           </div>
         </div>
-        <div class="chips">
-          <span class="chip">SQL</span><span class="chip">Power BI</span>
-          <span class="chip-v">$120M revenue</span><span class="chip-v">100K bookings</span>
-        </div>
-      </div></div>
-    </div>
-
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="sh reveal"><span class="stag">04 · Skills</span><h2 class="st">Core Competencies &amp; Stack</h2><div class="sl2"></div></div>
-  <div class="skills-grid">
-    <div class="sk-card reveal">
-      <div class="sk-head"><div class="sk-icon">🧠</div><span class="sk-title">AI & Machine Learning</span></div>
-      <div class="tag-grid">
-        <span class="tg">Applied NLP</span><span class="tg">Sentiment Analysis</span><span class="tg">Intent Recognition</span>
-        <span class="tg">Affective Computing</span><span class="tg">LLM Orchestration</span>
-      </div>
-    </div>
-    <div class="sk-card reveal">
-      <div class="sk-head"><div class="sk-icon">🔗</div><span class="sk-title">Infrastructure & Tools</span></div>
-      <div class="tag-grid">
-        <span class="tg">LangChain</span><span class="tg">Pinecone (Vector DB)</span><span class="tg">Google AI Pro</span>
-        <span class="tg">Audio-generation modeling</span>
-      </div>
-    </div>
-    <div class="sk-card reveal">
-      <div class="sk-head"><div class="sk-icon">📊</div><span class="sk-title">Data Science & Analytics</span></div>
-      <div class="tag-grid">
-        <span class="tg">Predictive Modeling</span><span class="tg">Statistical Analysis</span>
-        <span class="tg">Data Pipeline Optimization</span><span class="tg">Behavioral Data Analysis</span>
-      </div>
-    </div>
-    <div class="sk-card reveal">
-      <div class="sk-head"><div class="sk-icon">🎯</div><span class="sk-title">Domain Expertise</span></div>
-      <div class="tag-grid">
-        <span class="tg">Relational Infrastructure</span><span class="tg">Organizational Psychology Metrics</span>
-        <span class="tg">Digital Communication Latency</span>
-      </div>
-    </div>
-    <div class="sk-card reveal" style="grid-column:1/-1;">
-      <div class="sk-head"><div class="sk-icon">📜</div><span class="sk-title">Certifications</span></div>
-      <div class="tag-grid">
-        <span class="tg">PCAP Certified Associate Python Programmer</span><span class="tg">PCEP Certified Entry-Level Python Programmer</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- VISION / CURIOSITY -->
-<section id="vision">
-  <div class="sh reveal"><span class="stag">05 · Curiosity</span><h2 class="st">What I'm Exploring</h2><div class="sl2"></div></div>
-  <div class="vision-grid">
-    <div class="vision-list">
-      <div class="vision-item reveal">
-        <div class="vi-num">01</div>
-        <div>
-          <div class="vi-title">Relational AI</div>
-          <ul class="vi-pts">
-            <li>Can LLMs understand <em>intent</em>, not just words?</li>
-            <li>Emotional metadata in text — building for this</li>
-            <li>Context gap between sender and receiver</li>
-          </ul>
+        <div class="cur-item reveal">
+          <div class="ci-num">05</div>
+          <div>
+            <div class="ci-title">Psychology of Texting</div>
+            <ul class="ci-pts">
+              <li>Human behavior and emotional states in messaging</li>
+              <li>Digital miscommunication patterns</li>
+              <li>How screen-mediated communication alters empathy</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="vision-item reveal">
-        <div class="vi-num">02</div>
-        <div>
-          <div class="vi-title">Optimization Under Constraint</div>
-          <ul class="vi-pts">
-            <li>Resource allocation at scale (OR-Tools, Gurobi)</li>
-            <li>Healthcare workforce scheduling</li>
-            <li>NLP + operations research convergence</li>
-          </ul>
+
+      <div class="reveal" style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start;">
+        <div style="flex: 1; min-width: 240px;">
+          <div class="pipe-label">Typical AI Pipeline I Build</div>
+          <svg viewBox="0 0 300 490" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px">
+            <defs>
+              <marker id="a1" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+                <polygon points="0 0,7 3.5,0 7" fill="rgba(124,111,224,.5)" />
+              </marker>
+              <marker id="a2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+                <polygon points="0 0,7 3.5,0 7" fill="rgba(45,212,191,.5)" />
+              </marker>
+              <marker id="a3" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+                <polygon points="0 0,7 3.5,0 7" fill="rgba(244,114,182,.5)" />
+              </marker>
+            </defs>
+
+            <!-- Step 1 -->
+            <rect x="50" y="4" width="200" height="46" rx="8" fill="rgba(12,16,32,.95)" stroke="rgba(124,111,224,.4)"
+              stroke-width="1.5" />
+            <text x="150" y="22" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#7C6FE0"
+              text-anchor="middle">RAW DATA</text>
+            <text x="150" y="36" font-family="DM Mono,monospace" font-size="8" fill="#6B7594" text-anchor="middle">CSV ·
+              API · PDF · DB · Streams</text>
+            <line x1="150" y1="50" x2="150" y2="76" stroke="rgba(124,111,224,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#a1)" class="flow-line" />
+
+            <!-- Step 2 -->
+            <rect x="50" y="80" width="200" height="46" rx="8" fill="rgba(12,16,32,.95)" stroke="rgba(124,111,224,.3)"
+              stroke-width="1" />
+            <text x="150" y="98" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#7C6FE0"
+              text-anchor="middle">ETL / PIPELINE</text>
+            <text x="150" y="112" font-family="DM Mono,monospace" font-size="8" fill="#6B7594"
+              text-anchor="middle">Dagster · DBT · Snowflake</text>
+            <line x1="150" y1="126" x2="150" y2="152" stroke="rgba(45,212,191,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#a2)" class="flow-line" />
+
+            <!-- Step 3 -->
+            <rect x="50" y="156" width="200" height="46" rx="8" fill="rgba(12,16,32,.95)" stroke="rgba(45,212,191,.3)"
+              stroke-width="1" />
+            <text x="150" y="174" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#2DD4BF"
+              text-anchor="middle">FEATURE ENG.</text>
+            <text x="150" y="188" font-family="DM Mono,monospace" font-size="8" fill="#6B7594"
+              text-anchor="middle">Pandas · PySpark · SQL</text>
+            <line x1="150" y1="202" x2="150" y2="228" stroke="rgba(45,212,191,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#a2)" class="flow-line" />
+
+            <!-- Step 4 -->
+            <rect x="50" y="232" width="200" height="46" rx="8" fill="rgba(12,16,32,.95)" stroke="rgba(45,212,191,.3)"
+              stroke-width="1" />
+            <text x="150" y="250" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#2DD4BF"
+              text-anchor="middle">MODEL / LLM</text>
+            <text x="150" y="264" font-family="DM Mono,monospace" font-size="8" fill="#6B7594"
+              text-anchor="middle">XGBoost · LangChain · RAG</text>
+            <line x1="150" y1="278" x2="150" y2="304" stroke="rgba(244,114,182,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#a3)" class="flow-line" />
+
+            <!-- Step 5 -->
+            <rect x="50" y="308" width="200" height="46" rx="8" fill="rgba(12,16,32,.95)" stroke="rgba(244,114,182,.3)"
+              stroke-width="1" />
+            <text x="150" y="326" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#F472B6"
+              text-anchor="middle">EVALUATION</text>
+            <text x="150" y="340" font-family="DM Mono,monospace" font-size="8" fill="#6B7594" text-anchor="middle">A/B
+              Test · Accuracy · KPIs</text>
+            <line x1="150" y1="354" x2="150" y2="380" stroke="rgba(244,114,182,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#a3)" class="flow-line" />
+
+            <!-- Step 6 -->
+            <rect x="50" y="384" width="200" height="46" rx="8" fill="rgba(45,212,191,.08)"
+              stroke="rgba(45,212,191,.45)" stroke-width="1.5" />
+            <text x="150" y="402" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#2DD4BF"
+              text-anchor="middle">BUSINESS IMPACT</text>
+            <text x="150" y="416" font-family="DM Mono,monospace" font-size="8" fill="#6B7594" text-anchor="middle">Cost
+              savings · Revenue · Efficiency</text>
+
+            <!-- Step labels -->
+            <text x="42" y="32" font-family="DM Mono,monospace" font-size="8" fill="rgba(124,111,224,.4)"
+              text-anchor="end">01</text>
+            <text x="42" y="108" font-family="DM Mono,monospace" font-size="8" fill="rgba(124,111,224,.4)"
+              text-anchor="end">02</text>
+            <text x="42" y="184" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,212,191,.4)"
+              text-anchor="end">03</text>
+            <text x="42" y="260" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,212,191,.4)"
+              text-anchor="end">04</text>
+            <text x="42" y="336" font-family="DM Mono,monospace" font-size="8" fill="rgba(244,114,182,.4)"
+              text-anchor="end">05</text>
+            <text x="42" y="412" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,212,191,.4)"
+              text-anchor="end">06</text>
+          </svg>
+        </div>
+
+        <div style="flex: 1; min-width: 240px;">
+          <div class="pipe-label">My Approach to Projects</div>
+          <svg viewBox="0 0 300 286" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px">
+            <!-- Step 1 -->
+            <rect x="50" y="4" width="200" height="46" rx="8" fill="rgba(12,16,32,.95)" stroke="rgba(124,111,224,.4)"
+              stroke-width="1.5" />
+            <text x="150" y="22" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#7C6FE0"
+              text-anchor="middle">UNDERSTAND BUSINESS PROBLEM</text>
+            <text x="150" y="36" font-family="DM Mono,monospace" font-size="8" fill="#6B7594" text-anchor="middle">Ask
+              clarifying questions</text>
+            <line x1="150" y1="50" x2="150" y2="76" stroke="rgba(124,111,224,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#a1)" class="flow-line" />
+
+            <!-- Step 2 -->
+            <rect x="50" y="80" width="200" height="46" rx="8" fill="rgba(12,16,32,.95)" stroke="rgba(45,212,191,.4)"
+              stroke-width="1.5" />
+            <text x="150" y="98" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#2DD4BF"
+              text-anchor="middle">BREAK DOWN</text>
+            <text x="150" y="112" font-family="DM Mono,monospace" font-size="8" fill="#6B7594" text-anchor="middle">Map
+              to granular problems</text>
+            <line x1="150" y1="126" x2="150" y2="152" stroke="rgba(45,212,191,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#a2)" class="flow-line" />
+
+            <!-- Step 3 -->
+            <rect x="50" y="156" width="200" height="46" rx="8" fill="rgba(12,16,32,.95)" stroke="rgba(244,114,182,.4)"
+              stroke-width="1.5" />
+            <text x="150" y="174" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#F472B6"
+              text-anchor="middle">STRATEGIZE</text>
+            <text x="150" y="188" font-family="DM Mono,monospace" font-size="8" fill="#6B7594"
+              text-anchor="middle">Finalize optimal solutions</text>
+            <line x1="150" y1="202" x2="150" y2="228" stroke="rgba(244,114,182,.45)" stroke-width="1.5"
+              stroke-dasharray="4,3" marker-end="url(#a3)" class="flow-line" />
+
+            <!-- Step 4 -->
+            <rect x="50" y="232" width="200" height="46" rx="8" fill="rgba(45,212,191,.08)"
+              stroke="rgba(45,212,191,.45)" stroke-width="1.5" />
+            <text x="150" y="250" font-family="DM Mono,monospace" font-size="9" font-weight="500" fill="#2DD4BF"
+              text-anchor="middle">EXECUTE</text>
+            <text x="150" y="264" font-family="DM Mono,monospace" font-size="8" fill="#6B7594"
+              text-anchor="middle">Implement &amp; deploy</text>
+
+            <!-- Step labels -->
+            <text x="42" y="32" font-family="DM Mono,monospace" font-size="8" fill="rgba(124,111,224,.4)"
+              text-anchor="end">01</text>
+            <text x="42" y="108" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,212,191,.4)"
+              text-anchor="end">02</text>
+            <text x="42" y="184" font-family="DM Mono,monospace" font-size="8" fill="rgba(244,114,182,.4)"
+              text-anchor="end">03</text>
+            <text x="42" y="260" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,212,191,.4)"
+              text-anchor="end">04</text>
+          </svg>
         </div>
       </div>
-      <div class="vision-item reveal">
-        <div class="vi-num">03</div>
-        <div>
-          <div class="vi-title">Small Language Models</div>
-          <ul class="vi-pts">
-            <li>SLMs (Phi-4, Gemma, Mistral) for edge deployment</li>
-            <li>Accuracy vs. compute tradeoff in enterprise AI</li>
-            <li>RAG + SLMs for specialized domain tasks</li>
-          </ul>
-        </div>
-      </div>
     </div>
+  </section>
 
-    <!-- PIPELINE FLOWCHART -->
-    <div class="reveal">
-      <div style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--m);margin-bottom:16px">Typical AI Pipeline I Build</div>
-      <svg viewBox="0 0 320 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:320px">
-        <!-- boxes -->
-        <rect x="80" y="10" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.4)" stroke-width="1.5"/>
-        <text x="160" y="28" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">RAW DATA</text>
-        <text x="160" y="41" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">CSV · API · PDF · DB</text>
-
-        <line x1="160" y1="54" x2="160" y2="80" stroke="rgba(124,111,224,.4)" stroke-width="1" class="flow-line"/>
-
-        <rect x="80" y="80" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(124,111,224,.3)" stroke-width="1"/>
-        <text x="160" y="98" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#7C6FE0" text-anchor="middle">ETL / PIPELINE</text>
-        <text x="160" y="111" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Dagster · DBT · Snowflake</text>
-
-        <line x1="160" y1="124" x2="160" y2="150" stroke="rgba(124,111,224,.4)" stroke-width="1" class="flow-line"/>
-
-        <rect x="80" y="150" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.3)" stroke-width="1"/>
-        <text x="160" y="168" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">FEATURE ENG.</text>
-        <text x="160" y="181" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Pandas · PySpark · SQL</text>
-
-        <line x1="160" y1="194" x2="160" y2="220" stroke="rgba(45,212,191,.4)" stroke-width="1" class="flow-line"/>
-
-        <rect x="80" y="220" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(45,212,191,.3)" stroke-width="1"/>
-        <text x="160" y="238" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">MODEL / LLM</text>
-        <text x="160" y="251" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">XGBoost · LangChain · RAG</text>
-
-        <line x1="160" y1="264" x2="160" y2="290" stroke="rgba(45,212,191,.4)" stroke-width="1" class="flow-line"/>
-
-        <rect x="80" y="290" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(232,121,160,.3)" stroke-width="1"/>
-        <text x="160" y="308" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#E879A0" text-anchor="middle">EVALUATION</text>
-        <text x="160" y="321" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">A/B Test · Accuracy · KPIs</text>
-
-        <line x1="160" y1="334" x2="160" y2="360" stroke="rgba(232,121,160,.4)" stroke-width="1" class="flow-line"/>
-
-        <rect x="80" y="360" width="160" height="44" rx="8" fill="rgba(14,21,40,.9)" stroke="rgba(232,121,160,.3)" stroke-width="1"/>
-        <text x="160" y="378" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#E879A0" text-anchor="middle">DEPLOYMENT</text>
-        <text x="160" y="391" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Streamlit · API · Dashboard</text>
-
-        <line x1="160" y1="404" x2="160" y2="430" stroke="rgba(45,212,191,.4)" stroke-width="1" class="flow-line"/>
-
-        <rect x="80" y="430" width="160" height="44" rx="8" fill="rgba(45,212,191,.08)" stroke="rgba(45,212,191,.4)" stroke-width="1.5"/>
-        <text x="160" y="448" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="700" fill="#2DD4BF" text-anchor="middle">BUSINESS IMPACT</text>
-        <text x="160" y="461" font-family="Space Grotesk,sans-serif" font-size="8" fill="#7A84A0" text-anchor="middle">Cost savings · Revenue · Efficiency</text>
-
-        <!-- arrows -->
-        <polygon points="155,78 160,88 165,78" fill="rgba(124,111,224,.5)"/>
-        <polygon points="155,148 160,158 165,148" fill="rgba(124,111,224,.5)"/>
-        <polygon points="155,218 160,228 165,218" fill="rgba(45,212,191,.5)"/>
-        <polygon points="155,288 160,298 165,288" fill="rgba(45,212,191,.5)"/>
-        <polygon points="155,358 160,368 165,358" fill="rgba(232,121,160,.5)"/>
-        <polygon points="155,428 160,438 165,428" fill="rgba(45,212,191,.5)"/>
-      </svg>
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="contact-glow"></div>
+    <div class="ob-wrap reveal">
+      <div class="ob-dot"></div>Always curious · Always building
     </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <div class="sh reveal"><span class="stag">06 · Education</span><h2 class="st">Academic Background</h2><div class="sl2"></div></div>
-  <div class="edu-grid">
-    <div class="edu-card reveal">
-      <div class="edu-badge">Graduate · STEM</div>
-      <div class="edu-deg">Master of Business Analytics</div>
-      <div class="edu-sch">Pennsylvania State University</div>
-      <div class="edu-yr">Aug 2023 · State College, PA</div>
-      <ul class="blist">
-        <li>Focus: <strong>Predictive modeling &amp; statistical analysis</strong></li>
-        <li>Data-driven decision systems</li>
-        <li>Business intelligence &amp; forecasting</li>
-      </ul>
+    <h2 class="c-h2 reveal">Got an interesting idea?<br><span>Send me a message.</span></h2>
+    <div class="c-sub reveal">DM me on LinkedIn or drop an email — collaborations · ideas · conversations · all welcome
     </div>
-    <div class="edu-card reveal">
-      <div class="edu-badge">Undergraduate</div>
-      <div class="edu-deg">B.Tech — Mechanical Engineering</div>
-      <div class="edu-sch">Koneru Lakshmaiah University</div>
-      <div class="edu-yr">Jun 2018 · Vijayawada, India</div>
-      <ul class="blist">
-        <li>Foundation in <strong>systems thinking &amp; engineering</strong></li>
-        <li>PCEP Certified Python Programmer</li>
-        <li>PCAP Certified Associate Python Programmer</li>
-      </ul>
+    <div class="c-cards reveal">
+      <a href="mailto:tejapbt@gmail.com" class="cc cc-v">✉ tejapbt@gmail.com</a>
+      <a href="https://www.linkedin.com/in/p-brahma-teja/" target="_blank" class="cc cc-o">LinkedIn ↗</a>
+      <a href="https://v0-sarth-ai.vercel.app/?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio&amp;fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnS7ojAb9Lty4s7Uhy7yi9LNX3E03mgbdDyK3HZMxCOhqT7gMLAvYSJSYk7H8_aem_ZyuRaEFuLIe9ub1xuZ_IJg"
+        target="_blank" class="cc cc-o">SarthAI ↗</a>
+      <a href="https://drive.google.com/file/d/YOUR_RESUME_ID/view" target="_blank" class="cc cc-o">Resume ↓</a>
+      <a href="tel:+14129096036" class="cc cc-o">+1 (412) 909-6036</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-glow"></div>
-  <div class="open-badge reveal"><div class="ob-dot"></div>Open to senior roles &amp; AI collaborations</div>
-  <h2 class="c-h2 reveal">Have a hard problem?<br><span>Let's solve it.</span></h2>
-  <div class="contact-cards reveal">
-    <a href="mailto:tejapbt@gmail.com" class="cc cc-v">✉ tejapbt@gmail.com</a>
-    <a href="https://www.linkedin.com/in/p-brahma-teja/" target="_blank" class="cc cc-o">LinkedIn</a>
-    <a href="tel:+14129096036" class="cc cc-o">+1 (412) 909-6036</a>
-  </div>
-</section>
+  <footer>
+    <span style="display:flex;align-items:center;gap:8px">
+      <div style="width:6px;height:6px;border-radius:50%;background:var(--v)"></div>Brahma Teja Punnamaraju
+    </span>
+    <span>Data Scientist &amp; AI Consultant · AI Founder · Chicago, IL</span>
+    <span>tejapbt@gmail.com</span>
+  </footer>
 
-<footer>
-  <span style="display:flex;align-items:center;gap:8px"><div style="width:6px;height:6px;border-radius:50%;background:var(--v)"></div>Brahma Teja Punnamaraju</span>
-  <span>Data Scientist · AI Founder · Chicago, IL</span>
-  <span>tejapbt@gmail.com</span>
-</footer>
+  <script>
+    /* Scroll reveal */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('vis'), i * 55); io.unobserve(e.target) } })
+    }, { threshold: 0.06 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-<script>
-const io = new IntersectionObserver((entries) => {
-  entries.forEach((e,i)=>{
-    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('vis'),i*60);io.unobserve(e.target)}
-  })
-},{threshold:0.07});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    /* Exp toggle */
+    function toggleE(h) {
+      const c = h.closest('.exp-card'), open = c.classList.contains('open');
+      document.querySelectorAll('.exp-card.open').forEach(x => x.classList.remove('open'));
+      if (!open) c.classList.add('open');
+    }
 
-function toggleE(h){
-  const c=h.closest('.exp-card'),open=c.classList.contains('open');
-  document.querySelectorAll('.exp-card.open').forEach(x=>x.classList.remove('open'));
-  if(!open)c.classList.add('open');
-}
+    /* Active nav */
+    const secs = document.querySelectorAll('section[id]');
+    const links = document.querySelectorAll('.nl a');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      secs.forEach(s => { if (scrollY >= s.offsetTop - 100) cur = s.id });
+      links.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+      });
+    }, { passive: true });
 
-const secs=document.querySelectorAll('section[id]');
-const links=document.querySelectorAll('.nl a');
-window.addEventListener('scroll',()=>{
-  let cur='';
-  secs.forEach(s=>{if(scrollY>=s.offsetTop-100)cur=s.id});
-  links.forEach(a=>a.style.color=a.getAttribute('href')==='#'+cur?'var(--vl)':'');
-});
-</script>
+    /* SVG flow animation via JS for broader support */
+    document.querySelectorAll('.flow-line').forEach(el => {
+      el.style.animation = 'flowDash 1.2s linear infinite';
+    });
+  </script>
 </body>
+
 </html>
