@@ -1,0 +1,32 @@
+name: SarthAI Bi-Daily Poster
+
+on:
+  schedule:
+    # This runs at 12:00 PM UTC every 2 days
+    - cron: '0 12 */2 * *'
+  workflow_dispatch: # Allows you to trigger it manually for testing
+
+jobs:
+  post-to-linkedin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: |
+          pip install gspread oauth2client requests
+
+      - name: Run Python Script
+        env:
+          # These link to the secrets you will add in Step 5
+          GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDS }}
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
+          LINKEDIN_PERSON_ID: ${{ secrets.LINKEDIN_PERSON_ID }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python linkedin_bot.py
