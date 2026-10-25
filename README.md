@@ -2,7 +2,7 @@
 
 Personal portfolio site: Data Scientist · Generative AI & ML · Chicago, IL.
 
-**Live site:** https://bt280796-emobot.github.io/Portfolio/
+**Live site:** https://brahmateja96-mech.vercel.app/
 
 A single static page (`index.html`) with no build step. It covers experience, selected projects, skills, and SarthAI, a side venture in relational intelligence.
 
@@ -24,4 +24,4 @@ A single static page (`index.html`) with no build step. It covers experience, se
 
 ## Publishing
 
-Served by GitHub Pages from the `master` branch root (Settings → Pages).
+Live site is deployed on Vercel from the private `portfolio_96-mech` repo; keep the two in sync.
